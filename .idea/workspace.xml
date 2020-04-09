@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="225feb5a-ab03-4566-985d-7629214ff556" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1a7WA8eGnw03DChlPLr6wb6qox9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/entity/QuestionsAll" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\src\stackdigest\stackDigest\src\main\java\com\stackDigest\stackDigest\entity\QuestionsAll" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="open learningBoot" />
+      <command value="open 58. Spring REST - Create a Spring REST Controller" />
+      <command value="open jackson-databind-json-demo" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.StackDigestApplication">
+    <configuration name="QuestionAll" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.stackDigest.stackDigest.webservice.QuestionAll" />
+      <module name="stackDigest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.stackDigest.stackDigest.webservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StackDigestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="stackDigest" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.stackDigest.stackDigest.StackDigestApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.QuestionAll" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="225feb5a-ab03-4566-985d-7629214ff556" name="Default Changelist" comment="" />
+      <created>1586086965186</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586086965186</updated>
+      <workItem from="1586086981495" duration="9903000" />
+      <workItem from="1586147933237" duration="1385000" />
+      <workItem from="1586168557729" duration="18267000" />
+      <workItem from="1586239709446" duration="21444000" />
+      <workItem from="1586330149589" duration="9996000" />
+      <workItem from="1586410706677" duration="832000" />
+    </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1586176804219</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586176804219</updated>
+    </task>
+    <task id="LOCAL-00002" summary="init">
+      <created>1586184319768</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1586184319770</updated>
+    </task>
+    <task id="LOCAL-00003" summary="adding questions api handler">
+      <created>1586382406430</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1586382406431</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <MESSAGE value="adding questions api handler" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding questions api handler" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="275" y="42" key="#Project_Structure" timestamp="1586089774749">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="275" y="42" key="#Project_Structure/0.0.1366.768@0.0.1366.768" timestamp="1586089774749" />
+    <state x="453" y="85" key="#com.intellij.ide.util.MemberChooser" timestamp="1586354145885">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="453" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1586354145885" />
+    <state x="413" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586381793966">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="413" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1586381793966" />
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1586382403889">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1586382403889" />
+    <state x="505" y="283" key="Github.CreateGistDialog" timestamp="1586180716558">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="505" y="283" key="Github.CreateGistDialog/0.0.1366.768@0.0.1366.768" timestamp="1586180716558" />
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1586386431873">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1586386431873" />
+    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1586386431872">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1586386431872" />
+    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1586386431872">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1586386431872" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1586386431873">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1586386431873" />
+    <state width="1323" height="192" key="GridCell.Tab.1.bottom" timestamp="1586386431873">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="192" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1586386431873" />
+    <state width="1323" height="192" key="GridCell.Tab.1.center" timestamp="1586386431873">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="192" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1586386431873" />
+    <state width="1323" height="192" key="GridCell.Tab.1.left" timestamp="1586386431873">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="192" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1586386431873" />
+    <state width="1323" height="192" key="GridCell.Tab.1.right" timestamp="1586386431873">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="192" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1586386431873" />
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1586382411361">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1586382411361" />
+    <state x="379" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1586410713585">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="379" y="208" key="com.intellij.ide.util.TipDialog/0.0.1366.768@0.0.1366.768" timestamp="1586410713585" />
+    <state x="492" y="301" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586382372104">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="492" y="301" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768@0.0.1366.768" timestamp="1586382372104" />
+    <state x="339" y="172" width="672" height="677" key="run.anything.popup" timestamp="1586168874451">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="339" y="172" width="672" height="677" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1586168874451" />
+  </component>
+</project>
