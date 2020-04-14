@@ -5,9 +5,10 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.List;
 public class Items {
 
-    private List<String> tags;
+
     private List<Answers> answers;
     private Owner owner;
+    private List<String> tags;
     @JsonProperty("accepted_answer_id")
     private int acceptedAnswerId;
     private int score;
