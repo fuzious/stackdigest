@@ -1,6 +1,4 @@
-package com.stackDigest.stackDigest.entity.QuestionsAll;
-
-import com.fasterxml.jackson.annotation.JsonProperty;
+package com.stackDigest.stackDigest.beans.QuestionsAll;
 
 import java.util.List;
 

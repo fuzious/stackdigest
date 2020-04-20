@@ -1,6 +1,6 @@
 package com.stackDigest.stackDigest.webservice;
 
-import com.stackDigest.stackDigest.entity.QuestionsAll.JsonRootBean;
+import com.stackDigest.stackDigest.beans.QuestionsAll.JsonRootBean;
 import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

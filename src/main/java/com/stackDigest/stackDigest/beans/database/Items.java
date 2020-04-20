@@ -1,14 +1,15 @@
-package com.stackDigest.stackDigest.entity.database;
+package com.stackDigest.stackDigest.beans.database;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.ElementCollection;
+import javax.persistence.Entity;
+import javax.persistence.OneToOne;
+import javax.persistence.PrimaryKeyJoinColumn;
 import java.util.Set;
 
 @Entity
-@Table(name = "items")
-public class Items {
-	@Id
-	@Column
-	private int questionId;
+@PrimaryKeyJoinColumn(name = "qId")
+public class Items extends Owner {
 	@Column
 	private int score;
 	@Column
@@ -19,16 +20,18 @@ public class Items {
 	private String title;
 	@ElementCollection
 	private Set<String> tags;
+	@OneToOne
+	Answer answer;
+
+	public Answer getAnswer() {
+		return answer;
+	}
+
+	public void setAnswer(Answer answer) {
+		this.answer = answer;
+	}
 
 	public Items() {
-	}
-
-	public int getQuestionId() {
-		return questionId;
-	}
-
-	public void setQuestionId(int questionId) {
-		this.questionId = questionId;
 	}
 
 	public int getScore() {
