@@ -14,7 +14,7 @@ import java.util.Set;
 public class ItemsD extends OwnerD {
 	@Column
 	private int score;
-	@Lob
+	@Column
 	private String link;
 	@Lob
 	private String body;

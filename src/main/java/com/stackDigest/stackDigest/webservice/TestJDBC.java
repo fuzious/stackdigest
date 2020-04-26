@@ -69,6 +69,7 @@ public class TestJDBC {
             RestTemplate restTemplate = new RestTemplate();
             restTemplate.setRequestFactory(new HttpComponentsClientHttpRequestFactory());
             JsonRootBean result = restTemplate.getForObject(uri, JsonRootBean.class);
+            assert result != null;
             for (Items x:result.getItems()) {
                 System.out.println(genItemsD(x));
                 session.save(genItemsD(x));
@@ -82,7 +83,7 @@ public class TestJDBC {
             e.printStackTrace();
         }
         finally {
-//            factory.close();
+            factory.close();
         }
     }
 
