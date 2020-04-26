@@ -1,37 +1,41 @@
 package com.stackDigest.stackDigest.beans.database;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
+import javax.persistence.Lob;
 import javax.persistence.OneToOne;
 import javax.persistence.PrimaryKeyJoinColumn;
 import java.util.Set;
 
 @Entity
 @PrimaryKeyJoinColumn(name = "qId")
-public class Items extends Owner {
+public class ItemsD extends OwnerD {
 	@Column
 	private int score;
-	@Column
+	@Lob
 	private String link;
-	@Column
+	@Lob
 	private String body;
 	@Column
 	private String title;
 	@ElementCollection
 	private Set<String> tags;
-	@OneToOne
-	Answer answer;
+	@OneToOne(cascade = CascadeType.ALL)
+	AnswersD answersD;
 
-	public Answer getAnswer() {
-		return answer;
+
+
+	public AnswersD getAnswersD() {
+		return answersD;
 	}
 
-	public void setAnswer(Answer answer) {
-		this.answer = answer;
+	public void setAnswersD(AnswersD answersD) {
+		this.answersD = answersD;
 	}
 
-	public Items() {
+	public ItemsD() {
 	}
 
 	public int getScore() {
@@ -72,5 +76,17 @@ public class Items extends Owner {
 
 	public void setTags(Set<String> tags) {
 		this.tags = tags;
+	}
+
+	@Override
+	public String toString() {
+		return "Items{" +
+				"score=" + score +
+				", link='" + link + '\'' +
+				", body='" + body + '\'' +
+				", title='" + title + '\'' +
+				", tags=" + tags +
+				", answer=" + answersD +
+				'}';
 	}
 }

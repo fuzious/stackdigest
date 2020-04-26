@@ -46,4 +46,14 @@ public class Answers {
 		return body;
 	}
 
+	@Override
+	public String toString() {
+		return "Answers{" +
+				"owner=" + owner +
+				", isAccepted=" + isAccepted +
+				", score=" + score +
+				", creationDate=" + creationDate +
+				", body='" + body + '\'' +
+				'}';
+	}
 }

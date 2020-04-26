@@ -3,12 +3,14 @@ package com.stackDigest.stackDigest.beans.QuestionsAll;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
+import java.util.Set;
+
 public class Items {
 
 
     private List<Answers> answers;
     private Owner owner;
-    private List<String> tags;
+    private Set<String> tags;
     @JsonProperty("accepted_answer_id")
     private int acceptedAnswerId;
     private int score;
@@ -17,10 +19,10 @@ public class Items {
     private String link;
     private String title;
     private String body;
-    public void setTags(List<String> tags) {
+    public void setTags(Set<String> tags) {
         this.tags = tags;
     }
-    public List<String> getTags() {
+    public Set<String> getTags() {
         return tags;
     }
 
@@ -80,4 +82,18 @@ public class Items {
         return body;
     }
 
+    @Override
+    public String toString() {
+        return "Items{" +
+                "answers=" + answers +
+                ", owner=" + owner +
+                ", tags=" + tags +
+                ", acceptedAnswerId=" + acceptedAnswerId +
+                ", score=" + score +
+                ", questionId=" + questionId +
+                ", link='" + link + '\'' +
+                ", title='" + title + '\'' +
+                ", body='" + body + '\'' +
+                '}';
+    }
 }

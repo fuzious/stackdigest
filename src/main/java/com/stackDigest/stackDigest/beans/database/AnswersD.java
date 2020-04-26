@@ -2,19 +2,18 @@ package com.stackDigest.stackDigest.beans.database;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Lob;
 import javax.persistence.PrimaryKeyJoinColumn;
 
 @Entity
 @PrimaryKeyJoinColumn(name = "aId")
-public class Answer extends Owner {
+public class AnswersD extends OwnerD {
 	@Column
 	int score;
 	@Column
 	int creationDate;
-	@Column
+	@Lob
 	String body;
-	@Column
-	int columnId;
 
 	public int getScore() {
 		return score;
@@ -40,11 +39,12 @@ public class Answer extends Owner {
 		this.body = body;
 	}
 
-	public int getColumnId() {
-		return columnId;
-	}
-
-	public void setColumnId(int columnId) {
-		this.columnId = columnId;
+	@Override
+	public String toString() {
+		return "Answer{" +
+				"score=" + score +
+				", creationDate=" + creationDate +
+				", body='" + body + '\'' +
+				'}';
 	}
 }

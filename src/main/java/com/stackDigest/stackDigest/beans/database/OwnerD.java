@@ -8,7 +8,8 @@ import javax.persistence.InheritanceType;
 
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
-public class Owner {
+//@MappedSuperclass
+public class OwnerD {
 
 	@Id
 	private int assetId;
@@ -19,7 +20,7 @@ public class Owner {
 	@Column
 	private String ownerLink;
 
-	public Owner() {
+	public OwnerD() {
 	}
 
 	public int getAssetId() {
@@ -52,5 +53,15 @@ public class Owner {
 
 	public void setOwnerLink(String ownerLink) {
 		this.ownerLink = ownerLink;
+	}
+
+	@Override
+	public String toString() {
+		return "Owner{" +
+				"assetId=" + assetId +
+				", profileImage='" + profileImage + '\'' +
+				", displayName='" + displayName + '\'' +
+				", ownerLink='" + ownerLink + '\'' +
+				'}';
 	}
 }
