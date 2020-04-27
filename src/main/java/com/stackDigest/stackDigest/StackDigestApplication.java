@@ -1,11 +1,12 @@
 package com.stackDigest.stackDigest;
 
-import com.stackDigest.stackDigest.beans.QuestionsAll.Answers;
-import com.stackDigest.stackDigest.beans.QuestionsAll.Items;
-import com.stackDigest.stackDigest.beans.QuestionsAll.JsonRootBean;
 import com.stackDigest.stackDigest.beans.database.AnswersD;
 import com.stackDigest.stackDigest.beans.database.ItemsD;
 import com.stackDigest.stackDigest.beans.database.OwnerD;
+import com.stackDigest.stackDigest.beans.database.UserD;
+import com.stackDigest.stackDigest.beans.restfetch.QuestionsAll.Answers;
+import com.stackDigest.stackDigest.beans.restfetch.QuestionsAll.Items;
+import com.stackDigest.stackDigest.beans.restfetch.QuestionsAll.JsonRootBean;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -23,10 +24,10 @@ import java.util.Calendar;
 //@EnableScheduling
 public class StackDigestApplication {
 
-	private SessionFactory factory;
+	private static SessionFactory factory;
 	int i=1;
 
-	public SessionFactory getFactory() {
+	public static SessionFactory getFactory() {
 		return factory;
 	}
 
@@ -36,6 +37,7 @@ public class StackDigestApplication {
 				.addAnnotatedClass(ItemsD.class)
 				.addAnnotatedClass(OwnerD.class)
 				.addAnnotatedClass(AnswersD.class)
+				.addAnnotatedClass(UserD.class)
 				.buildSessionFactory();
 	}
 

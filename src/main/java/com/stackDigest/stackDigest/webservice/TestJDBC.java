@@ -1,11 +1,11 @@
 package com.stackDigest.stackDigest.webservice;
 
-import com.stackDigest.stackDigest.beans.QuestionsAll.Answers;
-import com.stackDigest.stackDigest.beans.QuestionsAll.Items;
-import com.stackDigest.stackDigest.beans.QuestionsAll.JsonRootBean;
 import com.stackDigest.stackDigest.beans.database.AnswersD;
 import com.stackDigest.stackDigest.beans.database.ItemsD;
 import com.stackDigest.stackDigest.beans.database.OwnerD;
+import com.stackDigest.stackDigest.beans.restfetch.QuestionsAll.Answers;
+import com.stackDigest.stackDigest.beans.restfetch.QuestionsAll.Items;
+import com.stackDigest.stackDigest.beans.restfetch.QuestionsAll.JsonRootBean;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;

@@ -1,4 +1,4 @@
-package com.stackDigest.stackDigest.beans.QuestionsAll;
+package com.stackDigest.stackDigest.beans.restfetch.QuestionsAll;
 
 import java.util.List;
 
