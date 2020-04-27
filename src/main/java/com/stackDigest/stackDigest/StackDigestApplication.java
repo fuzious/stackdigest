@@ -13,8 +13,6 @@ import org.hibernate.cfg.Configuration;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
-import org.springframework.scheduling.annotation.EnableScheduling;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.web.client.RestTemplate;
 
 import javax.annotation.PostConstruct;
@@ -22,7 +20,7 @@ import javax.annotation.PreDestroy;
 import java.util.Calendar;
 
 @SpringBootApplication
-@EnableScheduling
+//@EnableScheduling
 public class StackDigestApplication {
 
 	private SessionFactory factory;
@@ -33,7 +31,7 @@ public class StackDigestApplication {
 	}
 
 	@PostConstruct
-	public void init() {
+	public void startUp() {
 		factory=new Configuration().configure("hibernate.cfg.xml")
 				.addAnnotatedClass(ItemsD.class)
 				.addAnnotatedClass(OwnerD.class)
@@ -47,7 +45,7 @@ public class StackDigestApplication {
 		SpringApplication.run(StackDigestApplication.class, args);
 	}
 
-	@Scheduled(fixedDelay = 5000)
+//	@Scheduled(fixedDelay = 5000)
 	public void delay() {
 
 		Session session=factory.openSession();
