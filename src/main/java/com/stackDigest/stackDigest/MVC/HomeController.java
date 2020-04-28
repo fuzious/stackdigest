@@ -31,6 +31,7 @@ public class HomeController {
 		RestTemplate restTemplate = new RestTemplate();
 		restTemplate.setRequestFactory(new HttpComponentsClientHttpRequestFactory());
 		JsonRootBeanTag result = restTemplate.getForObject(uri,JsonRootBeanTag.class);
+		newUser.setRole("user");
 		assert result != null;
 		newUser.setTag1(result.getItems().get(0).getName());
 		newUser.setTag2(result.getItems().get(1).getName());

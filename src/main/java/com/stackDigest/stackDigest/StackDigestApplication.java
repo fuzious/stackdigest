@@ -3,7 +3,6 @@ package com.stackDigest.stackDigest;
 import com.stackDigest.stackDigest.beans.database.AnswersD;
 import com.stackDigest.stackDigest.beans.database.ItemsD;
 import com.stackDigest.stackDigest.beans.database.OwnerD;
-import com.stackDigest.stackDigest.beans.database.UserD;
 import com.stackDigest.stackDigest.beans.restfetch.QuestionsAll.Answers;
 import com.stackDigest.stackDigest.beans.restfetch.QuestionsAll.Items;
 import com.stackDigest.stackDigest.beans.restfetch.QuestionsAll.JsonRootBean;
@@ -37,7 +36,7 @@ public class StackDigestApplication {
 				.addAnnotatedClass(ItemsD.class)
 				.addAnnotatedClass(OwnerD.class)
 				.addAnnotatedClass(AnswersD.class)
-				.addAnnotatedClass(UserD.class)
+//				.addAnnotatedClass(UserD.class)
 				.buildSessionFactory();
 	}
 

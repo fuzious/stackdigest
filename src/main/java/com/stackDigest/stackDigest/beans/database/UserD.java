@@ -13,6 +13,8 @@ public class UserD {
 	@Column
 	String password;
 	@Column
+	String role;
+	@Column
 	String tag1;
 	@Column
 	String tag2;
@@ -39,6 +41,14 @@ public class UserD {
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+
+	public String getRole() {
+		return role;
+	}
+
+	public void setRole(String role) {
+		this.role = role;
 	}
 
 	public String getTag1() {

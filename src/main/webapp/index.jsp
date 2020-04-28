@@ -7,6 +7,7 @@
     </head>
 
     <body>
+
         <form:form action="registerUser" modelAttribute="newuser">
             User id: <form:input path="id" /> <br>
             Password: <form:password path="password"/> <br>
