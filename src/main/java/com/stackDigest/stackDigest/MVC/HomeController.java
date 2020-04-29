@@ -23,6 +23,16 @@ public class HomeController {
 		return "index";
 	}
 
+	@RequestMapping("/login")
+	public String loginPage() {
+		return "login";
+	}
+
+	@RequestMapping("/logout-success")
+	public String logoutPage() {
+		return "logout";
+	}
+
 	@RequestMapping("/registerUser")
 	public String registerUser(@ModelAttribute("newuser")UserD newUser) {
 

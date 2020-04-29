@@ -1,29 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="225feb5a-ab03-4566-985d-7629214ff556" name="Default Changelist" comment="registering a new user">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_2_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_2_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_2_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_2_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/security/MyUserDetailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/security/MyUserDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/security/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/security/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+    <list default="true" id="225feb5a-ab03-4566-985d-7629214ff556" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/logout.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/MVC/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/MVC/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/StackDigestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/StackDigestApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/beans/database/UserD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/beans/database/UserD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/post.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/post.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stackDigest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/stackDigest.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/StackDigestApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/StackDigestApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +193,8 @@
       <workItem from="1587999664007" duration="21091000" />
       <workItem from="1588033715482" duration="22000" />
       <workItem from="1588074899515" duration="15356000" />
-      <workItem from="1588108907102" duration="3223000" />
+      <workItem from="1588108907102" duration="4357000" />
+      <workItem from="1588135992648" duration="698000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1586176804219</created>
@@ -281,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588015066587</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Configured security with inbuilt form">
+      <created>1588112227856</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1588112227856</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,7 +301,8 @@
     <MESSAGE value="scheduled database update" />
     <MESSAGE value="init MVC" />
     <MESSAGE value="registering a new user" />
-    <option name="LAST_COMMIT_MESSAGE" value="registering a new user" />
+    <MESSAGE value="Configured security with inbuilt form" />
+    <option name="LAST_COMMIT_MESSAGE" value="Configured security with inbuilt form" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -337,10 +330,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="497" y="260" width="387" height="248" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog/0.0.1366.768@0.0.1366.768" timestamp="1587762664722" />
-    <state x="453" y="85" key="#com.intellij.ide.util.MemberChooser" timestamp="1588110493534">
+    <state x="453" y="85" key="#com.intellij.ide.util.MemberChooser" timestamp="1588112417785">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="453" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1588110493534" />
+    <state x="453" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1588112417785" />
     <state x="412" y="160" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1587414744908">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -373,10 +366,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="430" y="107" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.768@0.0.1366.768" timestamp="1587414494256" />
-    <state x="79" y="0" key="CommitChangelistDialog2" timestamp="1588015195103">
+    <state x="79" y="0" key="CommitChangelistDialog2" timestamp="1588112224710">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="79" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1588015195103" />
+    <state x="79" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1588112224710" />
     <state x="463" y="139" key="FileChooserDialogImpl" timestamp="1587996505396">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -385,38 +378,38 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="505" y="283" key="Github.CreateGistDialog/0.0.1366.768@0.0.1366.768" timestamp="1586901506003" />
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1588111430280">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1588113270472">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1588111430280" />
-    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1588111430279">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1588113270472" />
+    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1588113270472">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1588111430279" />
-    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1588111430279">
+    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1588113270472" />
+    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1588113270472">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1588111430279" />
-    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1588111430280">
+    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1588113270472" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1588113270472">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1588111430280" />
-    <state width="1323" height="192" key="GridCell.Tab.1.bottom" timestamp="1588111430281">
+    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1588113270472" />
+    <state width="1323" height="192" key="GridCell.Tab.1.bottom" timestamp="1588113270472">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1588111430281" />
-    <state width="1323" height="192" key="GridCell.Tab.1.center" timestamp="1588111430280">
+    <state width="1323" height="192" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1588113270472" />
+    <state width="1323" height="192" key="GridCell.Tab.1.center" timestamp="1588113270472">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1588111430280" />
-    <state width="1323" height="192" key="GridCell.Tab.1.left" timestamp="1588111430280">
+    <state width="1323" height="192" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1588113270472" />
+    <state width="1323" height="192" key="GridCell.Tab.1.left" timestamp="1588113270472">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1588111430280" />
-    <state width="1323" height="192" key="GridCell.Tab.1.right" timestamp="1588111430281">
+    <state width="1323" height="192" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1588113270472" />
+    <state width="1323" height="192" key="GridCell.Tab.1.right" timestamp="1588113270472">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1588111430281" />
+    <state width="1323" height="192" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1588113270472" />
     <state x="-54" y="10" width="1386" height="710" key="SettingsEditor" timestamp="1587999629644">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

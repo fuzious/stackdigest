@@ -7,8 +7,11 @@
 </head>
 
     <body>
-        ${SPRING_SECURITY_LAST_EXCEPTION.message}
-        User: <input type="text" name="username" value=""/>
-        Password:
+        <form action="/login" method="post">
+            ${SPRING_SECURITY_LAST_EXCEPTION.message}
+            User: <input type="text" name="username" value=""/>
+            Password: <input type="password" name="password" />
+            <input name="submit" type="submit" value="submit"/>
+        </form>
     </body>
 </html>
