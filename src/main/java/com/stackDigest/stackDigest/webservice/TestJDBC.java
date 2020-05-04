@@ -56,9 +56,9 @@ public class TestJDBC {
 //            answersD.setScore(100);
 //            answersD.setAssetId(121);
 //            item.setAnswersD(answersD);
-////            System.out.println(item);
-//
-//
+//            System.out.println(item);
+
+
 //            Transaction tx=session.beginTransaction();
 //            session.save(item);
 //            tx.commit();

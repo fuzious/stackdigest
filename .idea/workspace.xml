@@ -2,12 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="225feb5a-ab03-4566-985d-7629214ff556" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/logout.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_64.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_64.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_oauth_boot_spring_security_oauth2_autoconfigure_2_1_13_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_oauth_spring_security_oauth2_2_3_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_jwt_1_0_11_RELEASE.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/MVC/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/MVC/HomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/StackDigestApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/StackDigestApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/webservice/TestJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/webservice/TestJDBC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stackDigest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/stackDigest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +38,6 @@
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
-        <option name="downloadAnnotationsAutomatically" value="true" />
-        <option name="downloadDocsAutomatically" value="true" />
         <option name="downloadSourcesAutomatically" value="true" />
         <option name="vmOptionsForImporter" value="-Xmx768m" />
       </MavenImportingSettings>
@@ -57,7 +66,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -91,9 +100,14 @@
       <command value="open 58. Spring REST - Create a Spring REST Controller" />
       <command value="open jackson-databind-json-demo" />
       <command value="open C:\Users\fuzious\IdeaProjects\CP" />
-      <command value="open learningHibernate" />
       <command value="open D:\src\projects\learningMVC" />
       <command value="open D:\src\projects\learningSecurity" />
+      <command value="open " />
+      <command value="open D:\src\projects\EthereumPopulationRegister" />
+      <command value="open blockchainUdacity" />
+      <command value="open D:\src\projects\blockchainInit" />
+      <command value="open learningHibernate" />
+      <command value="open learningdocker" />
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.StackDigestApplication">
@@ -194,7 +208,20 @@
       <workItem from="1588033715482" duration="22000" />
       <workItem from="1588074899515" duration="15356000" />
       <workItem from="1588108907102" duration="4357000" />
-      <workItem from="1588135992648" duration="698000" />
+      <workItem from="1588135992648" duration="2680000" />
+      <workItem from="1588185657969" duration="2080000" />
+      <workItem from="1588339055758" duration="102000" />
+      <workItem from="1588339335805" duration="75000" />
+      <workItem from="1588413500061" duration="2567000" />
+      <workItem from="1588421942503" duration="995000" />
+      <workItem from="1588423662492" duration="735000" />
+      <workItem from="1588450060152" duration="6140000" />
+      <workItem from="1588485656327" duration="1431000" />
+      <workItem from="1588491700753" duration="68000" />
+      <workItem from="1588510447710" duration="54000" />
+      <workItem from="1588510750174" duration="2127000" />
+      <workItem from="1588540569694" duration="3181000" />
+      <workItem from="1588565983804" duration="4558000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1586176804219</created>
@@ -273,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588112227856</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Configured security with custom login-logout form">
+      <created>1588136721408</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1588136721408</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,7 +336,8 @@
     <MESSAGE value="init MVC" />
     <MESSAGE value="registering a new user" />
     <MESSAGE value="Configured security with inbuilt form" />
-    <option name="LAST_COMMIT_MESSAGE" value="Configured security with inbuilt form" />
+    <MESSAGE value="Configured security with custom login-logout form" />
+    <option name="LAST_COMMIT_MESSAGE" value="Configured security with custom login-logout form" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -366,10 +401,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="430" y="107" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.768@0.0.1366.768" timestamp="1587414494256" />
-    <state x="79" y="0" key="CommitChangelistDialog2" timestamp="1588112224710">
+    <state x="79" y="0" key="CommitChangelistDialog2" timestamp="1588136718697">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="79" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1588112224710" />
+    <state x="79" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1588136718697" />
     <state x="463" y="139" key="FileChooserDialogImpl" timestamp="1587996505396">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -378,46 +413,46 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="505" y="283" key="Github.CreateGistDialog/0.0.1366.768@0.0.1366.768" timestamp="1586901506003" />
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1588113270472">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1588570324453">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1588113270472" />
-    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1588113270472">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1588570324453" />
+    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1588570324453">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1588113270472" />
-    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1588113270472">
+    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1588570324453" />
+    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1588570324452">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1588113270472" />
-    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1588113270472">
+    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1588570324452" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1588570324453">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1588113270472" />
-    <state width="1323" height="192" key="GridCell.Tab.1.bottom" timestamp="1588113270472">
+    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1588570324453" />
+    <state width="1323" height="192" key="GridCell.Tab.1.bottom" timestamp="1588570324454">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1588113270472" />
-    <state width="1323" height="192" key="GridCell.Tab.1.center" timestamp="1588113270472">
+    <state width="1323" height="192" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1588570324454" />
+    <state width="1323" height="192" key="GridCell.Tab.1.center" timestamp="1588570324453">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1588113270472" />
-    <state width="1323" height="192" key="GridCell.Tab.1.left" timestamp="1588113270472">
+    <state width="1323" height="192" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1588570324453" />
+    <state width="1323" height="192" key="GridCell.Tab.1.left" timestamp="1588570324453">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1588113270472" />
-    <state width="1323" height="192" key="GridCell.Tab.1.right" timestamp="1588113270472">
+    <state width="1323" height="192" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1588570324453" />
+    <state width="1323" height="192" key="GridCell.Tab.1.right" timestamp="1588570324454">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1588113270472" />
-    <state x="-54" y="10" width="1386" height="710" key="SettingsEditor" timestamp="1587999629644">
+    <state width="1323" height="192" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1588570324454" />
+    <state x="0" y="5" width="1366" height="710" key="SettingsEditor" timestamp="1588450337557">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="-54" y="10" width="1386" height="710" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1587999629644" />
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1587965394710">
+    <state x="0" y="5" width="1366" height="710" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1588450337557" />
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1588136726137">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1587965394710" />
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1588136726137" />
     <state x="499" y="162" key="chooseDestDirectoryDialog" timestamp="1587414751935">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -430,18 +465,18 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="492" y="301" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.768@0.0.1366.768" timestamp="1586382372104" />
-    <state x="65" y="0" key="new project wizard" timestamp="1587998745807">
+    <state x="65" y="0" key="new project wizard" timestamp="1588491767193">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="65" y="0" key="new project wizard/0.0.1366.768@0.0.1366.768" timestamp="1587998745807" />
-    <state x="339" y="172" width="672" height="677" key="run.anything.popup" timestamp="1588081632922">
+    <state x="65" y="0" key="new project wizard/0.0.1366.768@0.0.1366.768" timestamp="1588491767193" />
+    <state x="339" y="172" width="672" height="677" key="run.anything.popup" timestamp="1588521705793">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="339" y="172" width="672" height="677" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1588081632922" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1588081575622">
+    <state x="339" y="172" width="672" height="677" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1588521705793" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1588137257729">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1588081575622" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1588137257729" />
     <state x="346" y="67" key="spring file set editor" timestamp="1587960271462">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
