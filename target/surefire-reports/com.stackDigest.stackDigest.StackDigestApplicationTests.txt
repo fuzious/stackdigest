@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.stackDigest.stackDigest.StackDigestApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.206 s - in com.stackDigest.stackDigest.StackDigestApplicationTests

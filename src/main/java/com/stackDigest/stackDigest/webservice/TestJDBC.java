@@ -5,13 +5,13 @@ import com.stackDigest.stackDigest.beans.database.ItemsD;
 import com.stackDigest.stackDigest.beans.database.OwnerD;
 import com.stackDigest.stackDigest.beans.restfetch.QuestionsAll.Answers;
 import com.stackDigest.stackDigest.beans.restfetch.QuestionsAll.Items;
-import com.stackDigest.stackDigest.beans.restfetch.QuestionsAll.JsonRootBean;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
-import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
-import org.springframework.web.client.RestTemplate;
+import org.hibernate.query.Query;
+
+import java.util.List;
 
 public class TestJDBC {
     public static void main(String[] args) {
@@ -64,19 +64,26 @@ public class TestJDBC {
 //            tx.commit();
 //            System.out.println("done");
 
-            final String uri = "https://api.stackexchange.com/2.2/search/advanced?page=1&order=desc&sort=votes&accepted=True&site=stackoverflow&filter=!)EhxQMOPc)dH94o7-NBjAb4AcHxu2_8*7Nua1q2CUHEgIfc*9";
+//            final String uri = "https://api.stackexchange.com/2.2/search/advanced?page=1&order=desc&sort=votes&accepted=True&site=stackoverflow&filter=!)EhxQMOPc)dH94o7-NBjAb4AcHxu2_8*7Nua1q2CUHEgIfc*9";
 
-            RestTemplate restTemplate = new RestTemplate();
-            restTemplate.setRequestFactory(new HttpComponentsClientHttpRequestFactory());
-            JsonRootBean result = restTemplate.getForObject(uri, JsonRootBean.class);
-            assert result != null;
-            for (Items x:result.getItems()) {
-                System.out.println(genItemsD(x));
-                session.save(genItemsD(x));
-            }
+//            RestTemplate restTemplate = new RestTemplate();
+//            restTemplate.setRequestFactory(new HttpComponentsClientHttpRequestFactory());
+//            JsonRootBean result = restTemplate.getForObject(uri, JsonRootBean.class);
+//            assert result != null;
+//            for (Items x:result.getItems()) {
+//                System.out.println(genItemsD(x));
+//                session.save(genItemsD(x));
+//            }
+//
+//            tx.commit();
+//            System.out.println("done");
 
-            tx.commit();
-            System.out.println("done");
+            List<ItemsD> items;
+            Session session1=factory.getCurrentSession();
+            Query<ItemsD> query=session.createQuery("from ItemsD");
+            items=query.list();
+            System.out.println(" printing items ");
+            System.out.println(items);
 
         }
         catch (Exception e) {
