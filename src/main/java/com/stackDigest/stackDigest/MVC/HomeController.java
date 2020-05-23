@@ -3,6 +3,7 @@ package com.stackDigest.stackDigest.MVC;
 import com.stackDigest.stackDigest.StackDigestApplication;
 import com.stackDigest.stackDigest.beans.database.UserD;
 import com.stackDigest.stackDigest.beans.restfetch.tagfetch.JsonRootBeanTag;
+import com.stackDigest.stackDigest.beans.restfetch.userFetch.JsonRootBeanUser;
 import com.stackDigest.stackDigest.security.MyUserDetails;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -47,19 +48,23 @@ public class HomeController {
 		return "loggedin";
 	}
 
-	@RequestMapping("/registerUser")
+	@RequestMapping("/registerUser"	)
 	public String registerUser(@ModelAttribute("newuser")UserD newUser) {
 
 		final String uri = "https://api.stackexchange.com/2.2/users/"+newUser.getId()+"/tags?order=desc&sort=popular&site=stackoverflow&filter=!-.G.68gzI8DP#";
+		final String userUri="https://api.stackexchange.com/2.2/users/"+newUser.getId()+"?order=desc&sort=reputation&site=stackoverflow&filter=!-B4.Y3b*SBQIU5-hiYEqW#";
 
 		RestTemplate restTemplate = new RestTemplate();
 		restTemplate.setRequestFactory(new HttpComponentsClientHttpRequestFactory());
 		JsonRootBeanTag result = restTemplate.getForObject(uri,JsonRootBeanTag.class);
+		JsonRootBeanUser userResult=restTemplate.getForObject(userUri,JsonRootBeanUser.class);
 		newUser.setRole("user");
 		newUser.setPassword(BCrypt.hashpw(newUser.getPassword(),salt));
 
 
 		assert result != null;
+		assert userResult!=null;
+
 		newUser.setTag1(result.getItems().get(0).getName());
 		newUser.setTag2(result.getItems().get(1).getName());
 		newUser.setTag3(result.getItems().get(2).getName());

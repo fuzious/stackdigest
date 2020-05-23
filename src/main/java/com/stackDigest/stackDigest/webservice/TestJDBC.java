@@ -40,8 +40,8 @@ public class TestJDBC {
 //            ItemsD item=new ItemsD();
 //            item.setLink("x");
 //            item.setAssetId(1);
-//            item.setDisplayName("a");
-//            item.setProfileImage("x");
+//            item.setSsdisplayName("a");
+//            item.setSsprofileImage("x");
 //            item.setBody("bdy");
 //            item.setLink("lin");
 //            item.setScore(100);

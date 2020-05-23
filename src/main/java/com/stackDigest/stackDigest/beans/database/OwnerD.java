@@ -1,10 +1,6 @@
 package com.stackDigest.stackDigest.beans.database;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Inheritance;
-import javax.persistence.InheritanceType;
+import javax.persistence.*;
 
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
@@ -59,8 +55,8 @@ public class OwnerD {
 	public String toString() {
 		return "Owner{" +
 				"assetId=" + assetId +
-				", profileImage='" + profileImage + '\'' +
-				", displayName='" + displayName + '\'' +
+				", ssprofileImage='" + profileImage + '\'' +
+				", ssdisplayName='" + displayName + '\'' +
 				", ownerLink='" + ownerLink + '\'' +
 				'}';
 	}

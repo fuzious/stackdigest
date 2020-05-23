@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.List;
 
 @Controller
-public class FeedController {
+public class ViewController {
     @RequestMapping("/feed")
     public String feed(Model theModel) {
 

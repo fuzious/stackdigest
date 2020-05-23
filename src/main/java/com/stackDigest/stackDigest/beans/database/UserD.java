@@ -24,6 +24,12 @@ public class UserD {
 	String tag4;
 	@Column
 	String tag5;
+	@Column
+	String displayname;
+	@Column
+	String profileimage;
+	@Column
+	String userlink;
 	@ElementCollection
 	List<Integer> seen;
 
@@ -99,16 +105,27 @@ public class UserD {
 		this.seen = seen;
 	}
 
-	@Override
-	public String toString() {
-		return "User{" +
-				"id=" + id +
-				", password='" + password + '\'' +
-				", tag1='" + tag1 + '\'' +
-				", tag2='" + tag2 + '\'' +
-				", tag3='" + tag3 + '\'' +
-				", tag4='" + tag4 + '\'' +
-				", tag5='" + tag5 + '\'' +
-				'}';
+	public String getDisplayname() {
+		return displayname;
+	}
+
+	public void setDisplayname(String displayname) {
+		this.displayname = displayname;
+	}
+
+	public String getProfileimage() {
+		return profileimage;
+	}
+
+	public void setProfileimage(String profileimage) {
+		this.profileimage = profileimage;
+	}
+
+	public String getUserlink() {
+		return userlink;
+	}
+
+	public void setUserlink(String userlink) {
+		this.userlink = userlink;
 	}
 }
