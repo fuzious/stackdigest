@@ -2,19 +2,17 @@ package com.stackDigest.stackDigest.webservice;
 
 import com.stackDigest.stackDigest.beans.database.AnswersD;
 import com.stackDigest.stackDigest.beans.database.ItemsD;
-import com.stackDigest.stackDigest.beans.database.OwnerD;
 import com.stackDigest.stackDigest.beans.restfetch.QuestionsAll.Answers;
 import com.stackDigest.stackDigest.beans.restfetch.QuestionsAll.Items;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
-import org.hibernate.cfg.Configuration;
-import org.hibernate.query.Query;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.client.utils.URIBuilder;
 
-import java.util.List;
+import java.net.URI;
+import java.net.URISyntaxException;
 
 public class TestJDBC {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws URISyntaxException {
 //        String jdbcUrl="jdbc:mysql://localhost:3306/stackdigest";
 //        String user="root";
 //        String pass="arpit";
@@ -27,13 +25,35 @@ public class TestJDBC {
 //            e.printStackTrace();
 //        }
 
-        SessionFactory factory=new Configuration().configure("hibernate.cfg.xml")
-                .addAnnotatedClass(ItemsD.class)
-                .addAnnotatedClass(OwnerD.class)
-                .addAnnotatedClass(AnswersD.class)
-                .buildSessionFactory();
-        Session session=factory.openSession();
-        Transaction tx=session.beginTransaction();
+        URI uri=new URIBuilder()
+                .setScheme("https")
+                .setHost("stackoverflow.com")
+                .setPath("/oauth")
+                .setParameter("client_id","17762")
+                .setParameter("scope","no_expiry")
+                .setParameter("redirect_uri","http://localhost:8080/oauth/final")
+                .build();
+        HttpGet httpGet=new HttpGet(uri);
+        System.out.println(httpGet.getURI());
+
+        URI post=new URIBuilder()
+                .setScheme("https")
+                .setHost("stackoverflow.com")
+                .setPath("/oauth/access_token")
+                .setParameter("client_id","17762")
+                .setParameter("client_secret","8PyQzYp5Mz2HVdk5Oo0pHw((")
+                .setParameter("code","Pma7MfCFmemIhvIznrholw))")
+                .setParameter("redirect_uri","https://www.google.com/")
+                .build();
+        HttpPost httpPost=new HttpPost(post);
+        System.out.println(httpPost.getURI());
+//        SessionFactory factory=new Configuration().configure("hibernate.cfg.xml")
+//                .addAnnotatedClass(ItemsD.class)
+//                .addAnnotatedClass(OwnerD.class)
+//                .addAnnotatedClass(AnswersD.class)
+//                .buildSessionFactory();
+//        Session session=factory.openSession();
+//        Transaction tx=session.beginTransaction();
 
         try {
 //            System.out.println("Creating items");
@@ -78,19 +98,19 @@ public class TestJDBC {
 //            tx.commit();
 //            System.out.println("done");
 
-            List<ItemsD> items;
-            Session session1=factory.getCurrentSession();
-            Query<ItemsD> query=session.createQuery("from ItemsD");
-            items=query.list();
-            System.out.println(" printing items ");
-            System.out.println(items);
+//            List<ItemsD> items;
+//            Session session1=factory.getCurrentSession();
+//            Query<ItemsD> query=session.createQuery("from ItemsD");
+//            items=query.list();
+//            System.out.println(" printing items ");
+//            System.out.println(items);
 
         }
         catch (Exception e) {
             e.printStackTrace();
         }
         finally {
-            factory.close();
+//            factory.close();
         }
     }
 

@@ -27,7 +27,7 @@ public class HomeController {
 		System.out.println("hi");
 		UserD newUser=new UserD();
 		theModel.addAttribute("newuser",newUser);
-		return "index";
+		return "home";
 	}
 
 	@RequestMapping("/login")
@@ -70,6 +70,10 @@ public class HomeController {
 		newUser.setTag3(result.getItems().get(2).getName());
 		newUser.setTag4(result.getItems().get(3).getName());
 		newUser.setTag5(result.getItems().get(4).getName());
+
+		newUser.setDisplayname(userResult.getItems().get(0).getDisplayName());
+		newUser.setProfileimage(userResult.getItems().get(0).getProfileImage());
+		newUser.setUserlink(userResult.getItems().get(0).getLink());
 
 		System.out.println(newUser);
 
