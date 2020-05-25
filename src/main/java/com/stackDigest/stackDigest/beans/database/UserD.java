@@ -9,9 +9,14 @@ import java.util.List;
 @Entity
 public class UserD {
 	@Id
-	int id;
+	@Column(nullable = false, columnDefinition="VARCHAR(64)")
+	String id;
 	@Column
 	String password;
+	@Column(unique = true)
+	int stackid;
+	@Column
+	String accesstoken;
 	@Column
 	String role;
 	@Column
@@ -33,11 +38,11 @@ public class UserD {
 	@ElementCollection
 	List<Integer> seen;
 
-	public int getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
@@ -47,6 +52,22 @@ public class UserD {
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+
+	public int getStackid() {
+		return stackid;
+	}
+
+	public void setStackid(int stackid) {
+		this.stackid = stackid;
+	}
+
+	public String getAccesstoken() {
+		return accesstoken;
+	}
+
+	public void setAccesstoken(String accesstoken) {
+		this.accesstoken = accesstoken;
 	}
 
 	public String getRole() {
@@ -127,5 +148,25 @@ public class UserD {
 
 	public void setUserlink(String userlink) {
 		this.userlink = userlink;
+	}
+
+	@Override
+	public String toString() {
+		return "UserD{" +
+				"id='" + id + '\'' +
+				", password='" + password + '\'' +
+				", stackid=" + stackid +
+				", accesstoken='" + accesstoken + '\'' +
+				", role='" + role + '\'' +
+				", tag1='" + tag1 + '\'' +
+				", tag2='" + tag2 + '\'' +
+				", tag3='" + tag3 + '\'' +
+				", tag4='" + tag4 + '\'' +
+				", tag5='" + tag5 + '\'' +
+				", displayname='" + displayname + '\'' +
+				", profileimage='" + profileimage + '\'' +
+				", userlink='" + userlink + '\'' +
+				", seen=" + seen +
+				'}';
 	}
 }

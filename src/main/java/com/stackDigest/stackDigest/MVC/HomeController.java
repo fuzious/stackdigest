@@ -49,19 +49,20 @@ public class HomeController {
 	}
 
 	@RequestMapping("/registerUser"	)
-	public String registerUser(@ModelAttribute("newuser")UserD newUser) {
+	public String registerUser(@ModelAttribute("newUser")UserD newUser,@ModelAttribute("access_token") String accesstoken) {
 
-		final String uri = "https://api.stackexchange.com/2.2/users/"+newUser.getId()+"/tags?order=desc&sort=popular&site=stackoverflow&filter=!-.G.68gzI8DP#";
-		final String userUri="https://api.stackexchange.com/2.2/users/"+newUser.getId()+"?order=desc&sort=reputation&site=stackoverflow&filter=!-B4.Y3b*SBQIU5-hiYEqW#";
+		final String userUri="https://api.stackexchange.com/2.2/me?order=desc&sort=reputation&site=stackoverflow&filter=!)69Ph.xUM9L(Fi(0_(vez0TM-xZ1&key=65fR1xeD5oDJ8rNnDW7YtA((&access_token="+newUser.getAccesstoken();
+		System.out.println(newUser+" "+accesstoken+" "+userUri);
 
 		RestTemplate restTemplate = new RestTemplate();
 		restTemplate.setRequestFactory(new HttpComponentsClientHttpRequestFactory());
-		JsonRootBeanTag result = restTemplate.getForObject(uri,JsonRootBeanTag.class);
 		JsonRootBeanUser userResult=restTemplate.getForObject(userUri,JsonRootBeanUser.class);
 		newUser.setRole("user");
 		newUser.setPassword(BCrypt.hashpw(newUser.getPassword(),salt));
 
-
+		final String uri = "https://api.stackexchange.com/2.2/users/"+userResult.getItems().get(0).getUserId()+"/tags?order=desc&sort=popular&site=stackoverflow&filter=!-.G.68gzI8DP#";
+		JsonRootBeanTag result = restTemplate.getForObject(uri,JsonRootBeanTag.class);
+		System.out.println(userResult);
 		assert result != null;
 		assert userResult!=null;
 
@@ -71,6 +72,7 @@ public class HomeController {
 		newUser.setTag4(result.getItems().get(3).getName());
 		newUser.setTag5(result.getItems().get(4).getName());
 
+		newUser.setStackid(	userResult.getItems().get(0).getUserId());
 		newUser.setDisplayname(userResult.getItems().get(0).getDisplayName());
 		newUser.setProfileimage(userResult.getItems().get(0).getProfileImage());
 		newUser.setUserlink(userResult.getItems().get(0).getLink());

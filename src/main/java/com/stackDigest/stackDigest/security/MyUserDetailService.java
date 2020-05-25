@@ -14,8 +14,8 @@ public class MyUserDetailService implements UserDetailsService {
 	UserRepository userRepository;
 
 	@Override
-	public UserDetails loadUserByUsername(String  username) throws UsernameNotFoundException {
-		UserD userD=userRepository.findById(Integer.parseInt(username));
+	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+		UserD userD=userRepository.findById(username);
 		if (userD==null)
 			throw new  UsernameNotFoundException("User 404");
 		return new MyUserDetails(userD);

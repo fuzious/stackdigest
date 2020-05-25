@@ -1,12 +1,15 @@
 package com.stackDigest.stackDigest.beans.restfetch.userFetch;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 
 public class Items {
 
     private int reputation;
     @JsonProperty("user_id")
-    private int userId;
+    private int userId;  //stackid
     private String link;
     @JsonProperty("profile_image")
     private String profileImage;

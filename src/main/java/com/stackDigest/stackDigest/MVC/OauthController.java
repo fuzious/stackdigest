@@ -1,5 +1,6 @@
 package com.stackDigest.stackDigest.MVC;
 
+import com.stackDigest.stackDigest.beans.database.UserD;
 import com.stackDigest.stackDigest.beans.restfetch.JsonRootBeanAccessToken;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -23,7 +24,7 @@ public class OauthController {
     }
 
     @RequestMapping("/oauth/final")
-    public String middleOauth(@RequestParam String code, Model theModel) {
+    public String middleOauth(@RequestParam String code, Model theModel) throws Exception {
         String url="https://stackoverflow.com/oauth/access_token/json";
         RestTemplate restTemplate=new RestTemplate();
         HttpHeaders headers=new HttpHeaders();
@@ -36,11 +37,14 @@ public class OauthController {
 
         HttpEntity<MultiValueMap<String,String>> mapHttpEntity= new HttpEntity<>(multiValueMap,headers);
         ResponseEntity<JsonRootBeanAccessToken> response = restTemplate.postForEntity( url, mapHttpEntity , JsonRootBeanAccessToken.class );
-        System.out.println(response.getBody().getAccessToken());
-
-        theModel.addAttribute("access_token",response.getBody().getAccessToken());
+        if(response.getBody().getExpires()!=0)
+            throw new Exception("the token is not no_expiry");
+        UserD userD=new UserD();
+        userD.setAccesstoken(response.getBody().getAccessToken());
+        theModel.addAttribute("newUser",userD);
         return "registration";
     }
 }
 //3(XfR4q(IsTzfaijWg6*qg)) code
-//hlDGSXe81YSatw0(2rimNg)) key
+//65fR1xeD5oDJ8rNnDW7YtA(( key
+//hlDGSXe81YSatw0(2rimNg)) token
