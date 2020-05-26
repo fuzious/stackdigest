@@ -30,6 +30,11 @@ public class HomeController {
 		return "home";
 	}
 
+	@RequestMapping("/a")
+	public String a() {
+		return "a";
+	}
+
 	@RequestMapping("/login")
 	public String loginPage() {
 		return "login";

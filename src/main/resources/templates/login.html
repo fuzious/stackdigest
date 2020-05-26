@@ -1,14 +1,27 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<html xmlns:th="http://www.thymeleaf.org" lang="java">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <title>Login Form Design One | Fazt</title>
+    <link rel="stylesheet" href="css/master.css">
 </head>
 <body>
+
+<div class="login-box">
+    <img src="images/stomach.png" class="avatar" alt="Avatar Image">
+    <!--    <div>Icons made by <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons">Flat Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
+    <h1>Stack Digest</h1>
     <form action="#" th:action="@{/login}" method="post">
-        <input type="text" th:name="username" required/>
-        <input type="password" th:name="password" required/>
-        <button type="submit">Login</button>
+        <!-- USERNAME INPUT -->
+        <label >Username</label>
+        <input type="text" th:name="username" placeholder="Enter Username" required>
+        <!-- PASSWORD INPUT -->
+        <label >Password</label>
+        <input type="password" th:name="password" placeholder="Enter Password" required>
+        <input type="submit" value="Log In">
+<!--        <a href="#">Lost your Password?</a><br>-->
+        <a href="/oauth/init">Don't have An account?</a>
     </form>
+</div>
 </body>
 </html>

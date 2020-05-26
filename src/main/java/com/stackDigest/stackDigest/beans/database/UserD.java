@@ -13,7 +13,7 @@ public class UserD {
 	String id;
 	@Column
 	String password;
-	@Column(unique = true)
+	@Column(unique = true)   //made unique so that a user does not register twice
 	int stackid;
 	@Column
 	String accesstoken;

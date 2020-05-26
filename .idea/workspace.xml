@@ -19,19 +19,27 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="225feb5a-ab03-4566-985d-7629214ff556" name="Default Changelist" comment="">
+    <list default="true" id="225feb5a-ab03-4566-985d-7629214ff556" name="Default Changelist" comment="login form ui">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/master.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/abc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/bg.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/stomach.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/a.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/MVC/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/MVC/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/MVC/OauthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/MVC/OauthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/StackDigestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/StackDigestApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/beans/database/UserD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/beans/database/UserD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/beans/restfetch/tagfetch/JsonRootBeanTag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/beans/restfetch/tagfetch/JsonRootBeanTag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/beans/restfetch/userFetch/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/beans/restfetch/userFetch/Items.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/security/MyUserDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/security/MyUserDetailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/security/MyUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/security/MyUserDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/security/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/security/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/registration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/MVC/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/MVC/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/StackDigestApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/StackDigestApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/beans/database/UserD.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/beans/database/UserD.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/security/MyUserDetailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/security/MyUserDetailService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/security/MyUserDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/security/MyUserDetails.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/security/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/security/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/security/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/security/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/webservice/TestJDBC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/webservice/TestJDBC.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +49,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -79,7 +87,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/images" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -88,11 +96,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\src\stackdigest\stackDigest\src\main\resources\static\" />
+      <recent name="D:\src\stackdigest\stackDigest\src\main\resources\static\support" />
       <recent name="D:\src\stackdigest\stackDigest\src\main\webapp\WEB-INF\jsp" />
       <recent name="D:\src\stackdigest\stackDigest\src\main\webapp" />
       <recent name="D:\src\stackdigest\stackDigest\src\main\resources\static" />
-      <recent name="D:\src\stackdigest\stackDigest\src\main\resources\templates" />
-      <recent name="D:\src\stackdigest\stackDigest\src\main\resources" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.stackDigest.stackDigest" />
@@ -105,11 +113,11 @@
       <recent name="com.stackDigest.stackDigest.webservice" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\src\stackdigest\stackDigest\src\main" />
-      <recent name="D:\src\stackdigest\stackDigest\src\main\webapp" />
-      <recent name="D:\src\stackdigest\stackDigest\src\main\resources" />
-      <recent name="D:\src\stackdigest\stackDigest\src\main\java\com\stackDigest\stackDigest" />
-      <recent name="D:\src\stackdigest\stackDigest\src\main\java\com\stackDigest\stackDigest\entity\QuestionsAll" />
+      <recent name="D:\src\stackdigest\stackDigest\src\main\resources\static\images" />
+      <recent name="D:\src\stackdigest\stackDigest\src\main\resources\static\support\img" />
+      <recent name="D:\src\stackdigest\stackDigest\src\main\resources\static\" />
+      <recent name="D:\src\stackdigest\stackDigest\src\main\resources\static\css" />
+      <recent name="D:\src\stackdigest\stackDigest\src\main\resources\static" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -260,7 +268,10 @@
       <workItem from="1590233270555" duration="19306000" />
       <workItem from="1590301439340" duration="29144000" />
       <workItem from="1590360817067" duration="2412000" />
-      <workItem from="1590407476865" duration="18999000" />
+      <workItem from="1590407476865" duration="21206000" />
+      <workItem from="1590438874632" duration="1412000" />
+      <workItem from="1590440575061" duration="9753000" />
+      <workItem from="1590479777150" duration="4523000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1586176804219</created>
@@ -367,7 +378,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590356395518</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="user persisted via /me,sign up/in completed">
+      <created>1590436496495</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1590436496496</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -401,7 +419,8 @@
     <MESSAGE value="Basic feed constructed" />
     <MESSAGE value="Additional user details fetched" />
     <MESSAGE value="oauth done and thymeleaf implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="oauth done and thymeleaf implemented" />
+    <MESSAGE value="user persisted via /me,sign up/in completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="user persisted via /me,sign up/in completed" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -469,10 +488,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="430" y="107" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.768@0.0.1366.768" timestamp="1587414494256" />
-    <state x="79" y="0" key="CommitChangelistDialog2" timestamp="1590356391674">
+    <state x="79" y="0" key="CommitChangelistDialog2" timestamp="1590489374445">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="79" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1590356391674" />
+    <state x="79" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1590489374445" />
     <state x="463" y="139" key="FileChooserDialogImpl" timestamp="1587996505396">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -481,38 +500,38 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="505" y="283" key="Github.CreateGistDialog/0.0.1366.768@0.0.1366.768" timestamp="1586901506003" />
-    <state width="1323" height="178" key="GridCell.Tab.0.bottom" timestamp="1590436297873">
+    <state width="1323" height="178" key="GridCell.Tab.0.bottom" timestamp="1590489232787">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1590436297873" />
-    <state width="1323" height="178" key="GridCell.Tab.0.center" timestamp="1590436297873">
+    <state width="1323" height="178" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1590489232787" />
+    <state width="1323" height="178" key="GridCell.Tab.0.center" timestamp="1590489232787">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1590436297873" />
-    <state width="1323" height="178" key="GridCell.Tab.0.left" timestamp="1590436297872">
+    <state width="1323" height="178" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1590489232787" />
+    <state width="1323" height="178" key="GridCell.Tab.0.left" timestamp="1590489232787">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1590436297872" />
-    <state width="1323" height="178" key="GridCell.Tab.0.right" timestamp="1590436297873">
+    <state width="1323" height="178" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1590489232787" />
+    <state width="1323" height="178" key="GridCell.Tab.0.right" timestamp="1590489232787">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1590436297873" />
-    <state width="1323" height="178" key="GridCell.Tab.1.bottom" timestamp="1590436297873">
+    <state width="1323" height="178" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1590489232787" />
+    <state width="1323" height="178" key="GridCell.Tab.1.bottom" timestamp="1590489232788">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1590436297873" />
-    <state width="1323" height="178" key="GridCell.Tab.1.center" timestamp="1590436297873">
+    <state width="1323" height="178" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1590489232788" />
+    <state width="1323" height="178" key="GridCell.Tab.1.center" timestamp="1590489232787">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1590436297873" />
-    <state width="1323" height="178" key="GridCell.Tab.1.left" timestamp="1590436297873">
+    <state width="1323" height="178" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1590489232787" />
+    <state width="1323" height="178" key="GridCell.Tab.1.left" timestamp="1590489232787">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1590436297873" />
-    <state width="1323" height="178" key="GridCell.Tab.1.right" timestamp="1590436297873">
+    <state width="1323" height="178" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1590489232787" />
+    <state width="1323" height="178" key="GridCell.Tab.1.right" timestamp="1590489232788">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="178" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1590436297873" />
+    <state width="1323" height="178" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1590489232788" />
     <state width="1323" height="192" key="GridCell.Tab.2.bottom" timestamp="1590311617170">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -533,10 +552,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="0" y="5" width="1366" height="710" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1590246791711" />
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1590356407703">
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1590436508882">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1590356407703" />
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1590436508882" />
     <state x="499" y="162" key="chooseDestDirectoryDialog" timestamp="1587414751935">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
