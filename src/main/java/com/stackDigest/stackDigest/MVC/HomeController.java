@@ -14,30 +14,29 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.client.RestTemplate;
+
+import javax.servlet.http.HttpSession;
 
 @Controller
 public class HomeController {
 
 	private static int workload=10;
 	private static String salt=BCrypt.gensalt(workload);
-
 	@RequestMapping("/")
 	public String home(Model theModel) {
 		System.out.println("hi");
 		UserD newUser=new UserD();
 		theModel.addAttribute("newuser",newUser);
-		return "home";
-	}
-
-	@RequestMapping("/a")
-	public String a() {
-		return "a";
-	}
-
-	@RequestMapping("/login")
-	public String loginPage() {
 		return "login";
+	}
+
+	@RequestMapping("/currentUser")
+	@ResponseBody
+	public UserD currentLoggedIn() {
+		MyUserDetails fetchCurrentUser=(MyUserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		return fetchCurrentUser.getUserD();
 	}
 
 	@RequestMapping("/logout-success")
@@ -46,11 +45,13 @@ public class HomeController {
 	}
 
 	@RequestMapping("/loggedin")
-	public String loggedin(Model theModel) {
+	public String loggedin(HttpSession httpSession) throws CloneNotSupportedException {
 		MyUserDetails fetchCurrentUser=(MyUserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-		UserD currentUser=fetchCurrentUser.getUserD();
-		theModel.addAttribute("currentUser",currentUser);
-		return "loggedin";
+		UserD currentLoggedIn = fetchCurrentUser.getUserD();
+//		System.out.println(currentLoggedIn);
+		httpSession.setAttribute("currentUser",currentLoggedIn.clone());
+//				theModel.addAttribute("currentUser",currentUser);
+		return "feed";
 	}
 
 	@RequestMapping("/registerUser"	)
@@ -84,7 +85,7 @@ public class HomeController {
 
 		System.out.println(newUser);
 
-		Session session= StackDigestApplication.getFactory().getCurrentSession();
+		Session session= StackDigestApplication.getSession();
 		Transaction tx=session.beginTransaction();
 		session.save(newUser);
 		tx.commit();

@@ -34,11 +34,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http.csrf().disable()
-				.authorizeRequests().antMatchers("/","/a","/css/**","/images/**","/resources/**","/oauth/**","/registerUser","/login").permitAll()
+				.authorizeRequests().antMatchers("/","/css/**","/images/**","/resources/**","/oauth/**","/registerUser","/login").permitAll()
 				.anyRequest().authenticated()
 				.and()
 				.formLogin().loginPage("/login").defaultSuccessUrl("/loggedin").permitAll()
-				.and()
+					.and()
 				.logout().invalidateHttpSession(true)
 				.clearAuthentication(true)
 				.logoutRequestMatcher(new AntPathRequestMatcher("/logout"))

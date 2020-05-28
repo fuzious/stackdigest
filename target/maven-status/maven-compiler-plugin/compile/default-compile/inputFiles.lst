@@ -1,4 +1,5 @@
 D:\src\stackdigest\stackDigest\src\main\java\com\stackDigest\stackDigest\beans\restfetch\QuestionsAll\Items.java
+D:\src\stackdigest\stackDigest\src\main\java\com\stackDigest\stackDigest\beans\restfetch\JsonRootBeanAccessToken.java
 D:\src\stackdigest\stackDigest\src\main\java\com\stackDigest\stackDigest\security\SecurityConfig.java
 D:\src\stackdigest\stackDigest\src\main\java\com\stackDigest\stackDigest\MVC\HomeController.java
 D:\src\stackdigest\stackDigest\src\main\java\com\stackDigest\stackDigest\beans\restfetch\tagfetch\Items.java
@@ -13,6 +14,10 @@ D:\src\stackdigest\stackDigest\src\main\java\com\stackDigest\stackDigest\beans\d
 D:\src\stackdigest\stackDigest\src\main\java\com\stackDigest\stackDigest\security\MyUserDetails.java
 D:\src\stackdigest\stackDigest\src\main\java\com\stackDigest\stackDigest\security\UserRepository.java
 D:\src\stackdigest\stackDigest\src\main\java\com\stackDigest\stackDigest\beans\restfetch\tagfetch\JsonRootBeanTag.java
+D:\src\stackdigest\stackDigest\src\main\java\com\stackDigest\stackDigest\beans\restfetch\userFetch\Items.java
 D:\src\stackdigest\stackDigest\src\main\java\com\stackDigest\stackDigest\beans\database\ItemsD.java
 D:\src\stackdigest\stackDigest\src\main\java\com\stackDigest\stackDigest\beans\database\OwnerD.java
+D:\src\stackdigest\stackDigest\src\main\java\com\stackDigest\stackDigest\beans\restfetch\userFetch\JsonRootBeanUser.java
+D:\src\stackdigest\stackDigest\src\main\java\com\stackDigest\stackDigest\MVC\ViewController.java
 D:\src\stackdigest\stackDigest\src\main\java\com\stackDigest\stackDigest\beans\restfetch\QuestionsAll\Owner.java
+D:\src\stackdigest\stackDigest\src\main\java\com\stackDigest\stackDigest\MVC\OauthController.java

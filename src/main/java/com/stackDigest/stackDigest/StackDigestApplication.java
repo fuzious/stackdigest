@@ -14,6 +14,8 @@ import org.hibernate.cfg.Configuration;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
+import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.web.client.RestTemplate;
 
 import javax.annotation.PostConstruct;
@@ -21,24 +23,30 @@ import javax.annotation.PreDestroy;
 import java.util.Calendar;
 
 @SpringBootApplication
-//@EnableScheduling
+@EnableScheduling
 public class StackDigestApplication {
 
 	private static SessionFactory factory;
-	int i=1;
-
+	private static Session session;
+	private int i=1;
 	public static SessionFactory getFactory() {
 		return factory;
 	}
 
+	public static Session getSession() {
+		return session;
+	}
+
 	@PostConstruct
 	public void startUp() {
+
 		factory=new Configuration().configure("hibernate.cfg.xml")
 				.addAnnotatedClass(ItemsD.class)
 				.addAnnotatedClass(OwnerD.class)
 				.addAnnotatedClass(AnswersD.class)
 				.addAnnotatedClass(UserD.class)
 				.buildSessionFactory();
+		session=factory.openSession();
 	}
 
 
@@ -46,10 +54,10 @@ public class StackDigestApplication {
 		SpringApplication.run(StackDigestApplication.class, args);
 	}
 
-//	@Scheduled(fixedDelay = 500000)
+	@Scheduled(fixedDelay = 500000)
 	public void delay() {
 		System.out.println("hi");
-		Session session=factory.openSession();
+		session=factory.openSession();
 		Transaction tx=session.beginTransaction();
 
 		try {
@@ -63,7 +71,6 @@ public class StackDigestApplication {
 //				System.out.println(genItemsD(x));
 				session.save(genItemsD(x));
 			}
-
 			tx.commit();
 			System.out.println(Calendar.getInstance().getTime()+" done");
 
@@ -77,6 +84,8 @@ public class StackDigestApplication {
 
 	@PreDestroy
 	public void shutdown() {
+		System.out.println("Shut down");
+		session.close();
 		factory.close();
 	}
 

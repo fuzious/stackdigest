@@ -1,13 +1,10 @@
 package com.stackDigest.stackDigest.beans.database;
 
-import javax.persistence.Column;
-import javax.persistence.ElementCollection;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.List;
 
 @Entity
-public class UserD {
+public class UserD implements Cloneable{
 	@Id
 	@Column(nullable = false, columnDefinition="VARCHAR(64)")
 	String id;
@@ -35,8 +32,9 @@ public class UserD {
 	String profileimage;
 	@Column
 	String userlink;
-	@ElementCollection
+	@ElementCollection(fetch = FetchType.EAGER)
 	List<Integer> seen;
+
 
 	public String getId() {
 		return id;
@@ -168,5 +166,10 @@ public class UserD {
 				", userlink='" + userlink + '\'' +
 				", seen=" + seen +
 				'}';
+	}
+
+	@Override
+	public Object clone() throws CloneNotSupportedException {
+		return super.clone();
 	}
 }

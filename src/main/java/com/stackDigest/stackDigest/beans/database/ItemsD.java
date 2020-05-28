@@ -1,12 +1,6 @@
 package com.stackDigest.stackDigest.beans.database;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.ElementCollection;
-import javax.persistence.Entity;
-import javax.persistence.Lob;
-import javax.persistence.OneToOne;
-import javax.persistence.PrimaryKeyJoinColumn;
+import javax.persistence.*;
 import java.util.Set;
 
 @Entity
@@ -22,7 +16,7 @@ public class ItemsD extends OwnerD {
 	private String title;
 	@ElementCollection
 	private Set<String> tags;
-	@OneToOne(cascade = CascadeType.ALL)
+	@OneToOne(fetch = FetchType.EAGER,cascade = CascadeType.ALL)
 	AnswersD answersD;
 
 

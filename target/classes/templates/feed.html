@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="java">
+<head>
+    <meta charset="utf-8">
+    <title>Feed</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <input type="button" name="getData" id="getData" value="GET DATA" onclick="getDataFromApi();"/>
+    <input type="text" name="demo_id" id="demo_id"/>
+    <script>
+        let abc;
+
+        function getDataFromApi() {
+            $.ajax({
+                url: "/feed",
+                type: "GET",
+                success: function (data) {
+                    abc=data;
+                    console.log(JSON.stringify(abc));
+                },error: function (jqXHR,textStatus,errorThrown) {
+                    alert(jqXHR+" "+textStatus+" "+errorThrown)
+                }
+            })
+        }
+    </script>
+</body>
+</html>

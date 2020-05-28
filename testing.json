@@ -1,0 +1,51 @@
+[
+  {
+    "assetId": 292357,
+    "profileImage": "https://www.gravatar.com/avatar/931970b8dc51b72e05e3a12b88612d61?s=128&d=identicon&r=PG",
+    "displayName": "pupeno",
+    "ownerLink": "https://stackoverflow.com/users/6068/pupeno",
+    "score": 11896,
+    "link": "https://stackoverflow.com/questions/292357/what-is-the-difference-between-git-pull-and-git-fetch",
+    "body": "<p>What are the differences between <code>git pull</code> and <code>git fetch</code>?</p>\n",
+    "title": "What is the difference between &#39;git pull&#39; and &#39;git fetch&#39;?",
+    "tags": [
+      "git-fetch",
+      "git",
+      "git-pull",
+      "version-control"
+    ],
+    "answersD": {
+      "assetId": 292359,
+      "profileImage": "https://www.gravatar.com/avatar/747ffa5da3538e66840ebc0548b8fd58?s=128&d=identicon&r=PG",
+      "displayName": "Greg Hewgill",
+      "ownerLink": "https://stackoverflow.com/users/893/greg-hewgill",
+      "score": 9903,
+      "creationDate": 1226742760,
+      "body": "<p>In the simplest terms, <code>git pull</code> does a <code>git fetch</code> followed by a <code>git merge</code>.</p>\n\n<p>You can do a <code>git fetch</code> at any time to update your remote-tracking branches under <code>refs/remotes/&lt;remote&gt;/</code>.</p>\n\n<p>This operation never changes any of your own local branches under <code>refs/heads</code>, and is safe to do without changing your working copy. I have even heard of people running <code>git fetch</code> periodically in a cron job in the background (although I wouldn't recommend doing this).</p>\n\n<p>A <code>git pull</code> is what you would do to bring a local branch up-to-date with its remote version, while also updating your other remote-tracking branches.</p>\n\n<p>Git documentation – <a href=\"http://git-scm.com/docs/git-pull\" rel=\"noreferrer\"><strong>git pull</strong></a>:</p>\n\n<blockquote>\n  <p>In its default mode, <code>git pull</code> is shorthand for <code>git fetch</code> followed by <code>git merge FETCH_HEAD</code>.</p>\n</blockquote>\n"
+    }
+  },
+  {
+    "assetId": 477816,
+    "profileImage": "https://www.gravatar.com/avatar/f0af40756420859b5b63cbceb6d30505?s=128&d=identicon&r=PG",
+    "displayName": "Oli",
+    "ownerLink": "https://stackoverflow.com/users/12870/oli",
+    "score": 10240,
+    "link": "https://stackoverflow.com/questions/477816/what-is-the-correct-json-content-type",
+    "body": "<p>I've been messing around with <a href=\"http://en.wikipedia.org/wiki/JSON\" rel=\"noreferrer\">JSON</a> for some time, just pushing it out as text and it hasn't hurt anybody (that I know of), but I'd like to start doing things properly.</p>\n\n<p>I have seen <em>so</em> many purported \"standards\" for the JSON content type:</p>\n\n<pre><code>application/json\napplication/x-javascript\ntext/javascript\ntext/x-javascript\ntext/x-json\n</code></pre>\n\n<p>But which one is correct, or best? I gather that there are security and browser support issues varying between them.</p>\n\n<p>I know there's a similar question, <em><a href=\"https://stackoverflow.com/questions/404470/what-mime-type-if-json-is-being-returned-by-a-rest-api\">What MIME type if JSON is being returned by a REST API?</a></em>, but I'd like a slightly more targeted answer.</p>\n",
+    "title": "What is the correct JSON content type?",
+    "tags": [
+      "http-headers",
+      "json",
+      "content-type"
+    ],
+    "answersD": {
+      "assetId": 477819,
+      "profileImage": "https://www.gravatar.com/avatar/cd501083459cbc21fccae78e2d03bee2?s=128&d=identicon&r=PG",
+      "displayName": "Gumbo",
+      "ownerLink": "https://stackoverflow.com/users/53114/gumbo",
+      "score": 10296,
+      "creationDate": 1232897249,
+      "body": "<p>For JSON text:</p>\n\n<p><strong><code>application/json</code></strong></p>\n\n<blockquote>\n  <p>The MIME media type for JSON text is <strong><code>application/json</code></strong>. The default encoding is UTF-8. (Source: <a href=\"http://www.ietf.org/rfc/rfc4627.txt\" rel=\"noreferrer\">RFC 4627</a>).</p>\n</blockquote>\n\n<p>For <a href=\"http://en.wikipedia.org/wiki/JSONP\" rel=\"noreferrer\">JSONP</a> (runnable javascript) with callback:</p>\n\n<blockquote>\n  <p><strong><code>application/javascript</code></strong></p>\n</blockquote>\n\n<p>Here are some blog posts that were mentioned in the comments that are relevant.</p>\n\n<ul>\n<li><a href=\"http://jibbering.com/blog/?p=514\" rel=\"noreferrer\">Why you shouldn't use <code>text/html</code> for JSON</a></li>\n<li><a href=\"https://web.archive.org/web/20180102070201/www.entwicklungsgedanken.de/2008/06/06/problems-with-internet-explorer-and-applicationjson/\" rel=\"noreferrer\">Internet&nbsp;Explorer sometimes has issues with <code>application/json</code></a></li>\n<li><a href=\"https://github.com/h5bp/server-configs-nginx/blob/master/mime.types\" rel=\"noreferrer\">A rather complete list of Mimetypes and what to use them for</a></li>\n<li><a href=\"http://www.iana.org/assignments/media-types/application/\" rel=\"noreferrer\">The official mime type list at IANA</a> from @gnrfan's answer below</li>\n</ul>\n"
+    }
+  }
+]
