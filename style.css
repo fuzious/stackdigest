@@ -1,0 +1,176 @@
+body{
+    margin: 0px;
+    padding: 0px;
+background-color: rgb(248, 239, 239);  
+}
+/* navbar design */
+#navbar{
+    font-size: 20px;
+    display: inline-block;
+    /* border: 2px solid black;  */
+    position: sticky;
+    background-color: white;
+    width: 100%;
+}
+ul{
+    display: flex;
+}
+ul>li{
+    list-style: none;
+    color: black; 
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    padding: 20px;
+    color: red;
+}
+#first{
+    margin-left: 50px;
+}
+#third{
+    margin-right: 200px;
+}
+#add-button{
+    margin-left: 50px;
+    padding: 10px;
+
+    background-color: red;
+    color: white;
+    width: 150px;
+    border-radius: 200px;
+    cursor: pointer;
+    outline: none;
+}
+#empty{
+    margin-left: 250px;
+}
+
+/* Question page CSS */
+
+#question-container{
+    height: 300px;
+    width: 50%;
+    margin-left: 425px;
+    margin-top: 50px;
+}
+#statement{
+    margin-top: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: oblique;
+}
+#button-2{
+    margin-left: 50px;
+    padding: 10px;
+    background-color: rgb(12, 200, 247);
+    color: black;
+    width: 150px;
+    border-radius: 200px;
+    cursor: pointer;
+    outline: none;
+}
+/* CSS last link for refresh page */
+#refresh{
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+
+/* FEEd cards CSS */
+
+.feed{
+    display: block;
+    margin: auto;
+    /* border: 2px solid black; */
+    width: 40%;
+    min-height: 400px;
+    background-color: white;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+.profile{
+    height: 50px;
+    /* border: 2px solid black;  */
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.avatar{
+    height: 50px;
+    width: 50px;
+    vertical-align: middle;
+    border-radius: 50%;
+    padding: 0px;
+    margin: 0px;
+}
+.info{
+    margin-left: 50px;
+    font-weight: bold;
+    color: black;
+    margin-top: 10px;
+}
+.prof{
+    padding: 0px;
+    margin: 0px;
+}
+.ques{
+    padding-left: 20px;
+    padding-right: 20px;
+    /* border: 2px solid black; */
+    font-weight: bold;
+
+}
+.ans{
+    padding-left: 20px;
+    padding-right: 20px;
+    /* border: 2px solid black; */
+    margin-top: 10px;
+    overflow: auto;
+}
+.show-read-more .more-text{
+    display: none;
+}
+.upvote{
+    width: 0px;
+    height: 0px;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid green;
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
+    background-color: white;
+    outline: none;
+    margin-left: 20px;
+}
+.upvote-2{
+    margin-top: 0px;
+    margin-left: 35px;
+    height: 17px;
+    width: 12px;
+    background-color: green;
+    cursor: pointer;
+}
+/* For upvote button bottom line and number of upvotes in same line */
+.container-2{
+    display: inline-block;
+}
+.upvote-ul{
+    margin-left: 0px;
+    padding: 0px;
+    margin-top: 0px;
+
+}
+.number{
+    margin-left: 30px;
+}
+
+
