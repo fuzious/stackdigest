@@ -20,3 +20,4 @@
 		<property name="current_session_context_class">thread</property>
     </session-factory>
 </hibernate-configuration>
+<!--ye saare ques 5000 ms pr stackoverflow se db ko fill krte rhenge ye initial update hai-->

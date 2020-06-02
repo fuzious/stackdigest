@@ -54,6 +54,11 @@ public class HomeController {
 		return "feed";
 	}
 
+	@RequestMapping("/feed")
+	public String feed() {
+		return "feed";
+	}
+
 	@RequestMapping("/registerUser"	)
 	public String registerUser(@ModelAttribute("newUser")UserD newUser,@ModelAttribute("access_token") String accesstoken) {
 
