@@ -90,11 +90,11 @@ public class HomeController {
 
 		System.out.println(newUser);
 
-		Session session= StackDigestApplication.getSession();
+		Session session= StackDigestApplication.getFactory().getCurrentSession();
 		Transaction tx=session.beginTransaction();
 		session.save(newUser);
 		tx.commit();
-
+		System.out.println("success registered");
 		return "post";
 	}
 }

@@ -17,5 +17,11 @@ D:/src/stackdigest/stackDigest/src/main/resources/hibernate.cfg.xml</remarks>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/stackdigest</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="sql12345006@sql12.freemysqlhosting.net" uuid="e137b3d0-cb91-49c9-a7e2-8b9b2024f221">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://sql12.freemysqlhosting.net/sql12345006</jdbc-url>
+    </data-source>
   </component>
 </project>

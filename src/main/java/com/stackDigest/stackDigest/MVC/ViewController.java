@@ -3,6 +3,7 @@ package com.stackDigest.stackDigest.MVC;
 import com.stackDigest.stackDigest.StackDigestApplication;
 import com.stackDigest.stackDigest.beans.database.ItemsD;
 import com.stackDigest.stackDigest.beans.database.UserD;
+import com.stackDigest.stackDigest.beans.database.UserD_seen;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
@@ -24,21 +25,40 @@ public class ViewController {
         Transaction transaction=null;
         try {
             UserD currentUser=(UserD)httpSession.getAttribute("currentUser");
-            Session session = StackDigestApplication.getSession();
+            Session session = StackDigestApplication.getFactory().getCurrentSession();
             transaction = session.beginTransaction();
-            List<ItemsD> itemsDList;
+            List<ItemsD> itemsDList=null;
             System.out.println("init");
 //            Query<Integer> test=session.createQuery("select :seen from ItemsD");
 //            System.out.println("test "+test.list());
-            Query<ItemsD> itemsDQuery = session.createQuery("from ItemsD ").setMaxResults(10);
+
+            Query<ItemsD> itemsDQuery = session.createQuery("from ItemsD as items where items.id not in (select seen from UserD_seen where id='"+currentUser.getId()+"')").setMaxResults(10);
             itemsDList = itemsDQuery.list();
             transaction.commit();
+
+//            System.out.println(itemsDQuery.list());
+            Transaction transaction1=null;
+            try {
+                Session session1=StackDigestApplication.getFactory().getCurrentSession();
+                transaction1 = session1.beginTransaction();
+                itemsDList.forEach((i) -> {
+                    UserD_seen tmp = new UserD_seen(currentUser.getId(), i.getAssetId());
+                    session1.save(tmp);
+                });
+
+                transaction1.commit();
+            }
+            catch (Exception e) {
+                if (transaction1!=null)
+                transaction1.rollback();
+                e.printStackTrace();
+            }
             System.out.println("query "+itemsDList);
             return new ResponseEntity<>(itemsDList, HttpStatus.OK);
-
         }
         catch (Exception e) {
-            transaction.rollback();
+//            if(transaction.)
+//                transaction.rollback();
             e.printStackTrace();
             return null;
         }

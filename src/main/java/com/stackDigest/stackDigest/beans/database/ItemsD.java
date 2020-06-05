@@ -14,7 +14,7 @@ public class ItemsD extends OwnerD {
 	private String body;
 	@Column
 	private String title;
-	@ElementCollection
+	@ElementCollection(fetch = FetchType.EAGER)
 	private Set<String> tags;
 	@OneToOne(fetch = FetchType.EAGER,cascade = CascadeType.ALL)
 	AnswersD answersD;

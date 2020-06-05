@@ -20,29 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="225feb5a-ab03-4566-985d-7629214ff556" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/upvote-image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/feed2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/question.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/beans/database/UserD_seen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/question.html" beforeDir="false" afterPath="$PROJECT_DIR$/question.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/MVC/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/MVC/HomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/MVC/ViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/MVC/ViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/beans/database/OwnerD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/beans/database/OwnerD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/StackDigestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/StackDigestApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/beans/database/ItemsD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/beans/database/ItemsD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/beans/database/UserD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/beans/database/UserD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/feed.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/feed.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/MVC/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/MVC/HomeController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/MVC/ViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/MVC/ViewController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/beans/database/OwnerD.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/beans/database/OwnerD.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/security/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/security/SecurityConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/feed.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/feed.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testing.json" beforeDir="false" afterPath="$PROJECT_DIR$/testing.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,8 +47,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -91,6 +82,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com" />
@@ -286,7 +278,11 @@
       <workItem from="1590926194010" duration="6012000" />
       <workItem from="1590984418172" duration="1133000" />
       <workItem from="1591003107228" duration="3628000" />
-      <workItem from="1591106309277" duration="6884000" />
+      <workItem from="1591106309277" duration="7635000" />
+      <workItem from="1591151746421" duration="2393000" />
+      <workItem from="1591199551541" duration="628000" />
+      <workItem from="1591201656761" duration="5217000" />
+      <workItem from="1591347087565" duration="30289000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1586176804219</created>
@@ -414,7 +410,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590707850924</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="feed page init and ajax added">
+      <created>1591125387405</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1591125387405</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -451,14 +454,15 @@
     <MESSAGE value="user persisted via /me,sign up/in completed" />
     <MESSAGE value="login form ui" />
     <MESSAGE value="ajax for feed and minor hibernate session fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajax for feed and minor hibernate session fixes" />
+    <MESSAGE value="feed page init and ajax added" />
+    <option name="LAST_COMMIT_MESSAGE" value="feed page init and ajax added" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="275" y="42" key="#Assign_Data_Sources" timestamp="1587413466755">
+    <state x="275" y="42" width="664" height="217" key="#Assign_Data_Sources" timestamp="1591372228082">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="42" key="#Assign_Data_Sources/0.0.1366.768@0.0.1366.768" timestamp="1587413466755" />
+    <state x="275" y="42" width="664" height="217" key="#Assign_Data_Sources/0.0.1366.768@0.0.1366.768" timestamp="1591372228082" />
     <state x="392" y="0" key="#Dockerfile" timestamp="1591004677790">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -475,10 +479,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="413" y="139" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1588003610297" />
-    <state x="275" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586875836328">
+    <state x="275" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591206366642">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1586875836328" />
+    <state x="275" y="42" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1591206366642" />
     <state x="453" y="186" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1591122655648">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -487,10 +491,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="497" y="260" width="387" height="248" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog/0.0.1366.768@0.0.1366.768" timestamp="1587762664722" />
-    <state x="453" y="85" key="#com.intellij.ide.util.MemberChooser" timestamp="1590704581837">
+    <state x="453" y="85" key="#com.intellij.ide.util.MemberChooser" timestamp="1591374879908">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="453" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1590704581837" />
+    <state x="453" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1591374879908" />
     <state x="412" y="160" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1587414744908">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -523,74 +527,74 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="430" y="107" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.768@0.0.1366.768" timestamp="1587414494256" />
-    <state x="79" y="0" key="CommitChangelistDialog2" timestamp="1590707846171">
+    <state x="79" y="0" key="CommitChangelistDialog2" timestamp="1591125383396">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="79" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1590707846171" />
-    <state x="463" y="139" key="FileChooserDialogImpl" timestamp="1587996505396">
+    <state x="79" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1591125383396" />
+    <state x="463" y="103" width="440" height="633" key="FileChooserDialogImpl" timestamp="1591348133561">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="463" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1587996505396" />
+    <state x="463" y="103" width="440" height="633" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1591348133561" />
     <state x="505" y="283" key="Github.CreateGistDialog" timestamp="1591024703456">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="505" y="283" key="Github.CreateGistDialog/0.0.1366.768@0.0.1366.768" timestamp="1591024703456" />
-    <state width="1323" height="176" key="GridCell.Tab.0.bottom" timestamp="1591125139063">
+    <state width="1323" height="222" key="GridCell.Tab.0.bottom" timestamp="1591387079554">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="176" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1591125139063" />
-    <state width="1323" height="176" key="GridCell.Tab.0.center" timestamp="1591125139062">
+    <state width="1323" height="222" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1591387079554" />
+    <state width="1323" height="222" key="GridCell.Tab.0.center" timestamp="1591387079554">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="176" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1591125139062" />
-    <state width="1323" height="176" key="GridCell.Tab.0.left" timestamp="1591125139062">
+    <state width="1323" height="222" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1591387079554" />
+    <state width="1323" height="222" key="GridCell.Tab.0.left" timestamp="1591387079553">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="176" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1591125139062" />
-    <state width="1323" height="176" key="GridCell.Tab.0.right" timestamp="1591125139062">
+    <state width="1323" height="222" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1591387079553" />
+    <state width="1323" height="222" key="GridCell.Tab.0.right" timestamp="1591387079554">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="176" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1591125139062" />
-    <state width="1323" height="176" key="GridCell.Tab.1.bottom" timestamp="1591125139063">
+    <state width="1323" height="222" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1591387079554" />
+    <state width="1323" height="222" key="GridCell.Tab.1.bottom" timestamp="1591387079554">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="176" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1591125139063" />
-    <state width="1323" height="176" key="GridCell.Tab.1.center" timestamp="1591125139063">
+    <state width="1323" height="222" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1591387079554" />
+    <state width="1323" height="222" key="GridCell.Tab.1.center" timestamp="1591387079554">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="176" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1591125139063" />
-    <state width="1323" height="176" key="GridCell.Tab.1.left" timestamp="1591125139063">
+    <state width="1323" height="222" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1591387079554" />
+    <state width="1323" height="222" key="GridCell.Tab.1.left" timestamp="1591387079554">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="176" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1591125139063" />
-    <state width="1323" height="176" key="GridCell.Tab.1.right" timestamp="1591125139063">
+    <state width="1323" height="222" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1591387079554" />
+    <state width="1323" height="222" key="GridCell.Tab.1.right" timestamp="1591387079554">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="176" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1591125139063" />
-    <state width="1323" height="238" key="GridCell.Tab.2.bottom" timestamp="1591121835681">
+    <state width="1323" height="222" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1591387079554" />
+    <state width="1323" height="238" key="GridCell.Tab.2.bottom" timestamp="1591128758634">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="238" key="GridCell.Tab.2.bottom/0.0.1366.768@0.0.1366.768" timestamp="1591121835681" />
-    <state width="1323" height="238" key="GridCell.Tab.2.center" timestamp="1591121835681">
+    <state width="1323" height="238" key="GridCell.Tab.2.bottom/0.0.1366.768@0.0.1366.768" timestamp="1591128758634" />
+    <state width="1323" height="238" key="GridCell.Tab.2.center" timestamp="1591128758634">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="238" key="GridCell.Tab.2.center/0.0.1366.768@0.0.1366.768" timestamp="1591121835681" />
-    <state width="1323" height="238" key="GridCell.Tab.2.left" timestamp="1591121835681">
+    <state width="1323" height="238" key="GridCell.Tab.2.center/0.0.1366.768@0.0.1366.768" timestamp="1591128758634" />
+    <state width="1323" height="238" key="GridCell.Tab.2.left" timestamp="1591128758634">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="238" key="GridCell.Tab.2.left/0.0.1366.768@0.0.1366.768" timestamp="1591121835681" />
-    <state width="1323" height="238" key="GridCell.Tab.2.right" timestamp="1591121835681">
+    <state width="1323" height="238" key="GridCell.Tab.2.left/0.0.1366.768@0.0.1366.768" timestamp="1591128758634" />
+    <state width="1323" height="238" key="GridCell.Tab.2.right" timestamp="1591128758634">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="238" key="GridCell.Tab.2.right/0.0.1366.768@0.0.1366.768" timestamp="1591121835681" />
+    <state width="1323" height="238" key="GridCell.Tab.2.right/0.0.1366.768@0.0.1366.768" timestamp="1591128758634" />
     <state x="0" y="5" width="1366" height="710" key="SettingsEditor" timestamp="1591124551635">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="0" y="5" width="1366" height="710" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1591124551635" />
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1590707856644">
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1591125391706">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1590707856644" />
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1591125391706" />
     <state x="499" y="162" key="chooseDestDirectoryDialog" timestamp="1587414751935">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

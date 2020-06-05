@@ -1,9 +1,6 @@
 package com.stackDigest.stackDigest;
 
-import com.stackDigest.stackDigest.beans.database.AnswersD;
-import com.stackDigest.stackDigest.beans.database.ItemsD;
-import com.stackDigest.stackDigest.beans.database.OwnerD;
-import com.stackDigest.stackDigest.beans.database.UserD;
+import com.stackDigest.stackDigest.beans.database.*;
 import com.stackDigest.stackDigest.beans.restfetch.QuestionsAll.Answers;
 import com.stackDigest.stackDigest.beans.restfetch.QuestionsAll.Items;
 import com.stackDigest.stackDigest.beans.restfetch.QuestionsAll.JsonRootBean;
@@ -27,14 +24,9 @@ import java.util.Calendar;
 public class StackDigestApplication {
 
 	private static SessionFactory factory;
-	private static Session session;
 	private int i=1;
 	public static SessionFactory getFactory() {
 		return factory;
-	}
-
-	public static Session getSession() {
-		return session;
 	}
 
 	@PostConstruct
@@ -45,8 +37,8 @@ public class StackDigestApplication {
 				.addAnnotatedClass(OwnerD.class)
 				.addAnnotatedClass(AnswersD.class)
 				.addAnnotatedClass(UserD.class)
+				.addAnnotatedClass(UserD_seen.class)
 				.buildSessionFactory();
-		session=factory.openSession();
 	}
 
 
@@ -54,10 +46,10 @@ public class StackDigestApplication {
 		SpringApplication.run(StackDigestApplication.class, args);
 	}
 
-	@Scheduled(fixedDelay = 500000)
+	@Scheduled(fixedDelay = 5000)
 	public void delay() {
 		System.out.println("hi");
-		session=factory.openSession();
+		Session session=factory.getCurrentSession();
 		Transaction tx=session.beginTransaction();
 
 		try {
@@ -85,7 +77,6 @@ public class StackDigestApplication {
 	@PreDestroy
 	public void shutdown() {
 		System.out.println("Shut down");
-		session.close();
 		factory.close();
 	}
 

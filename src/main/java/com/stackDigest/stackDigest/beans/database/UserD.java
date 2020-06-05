@@ -32,8 +32,10 @@ public class UserD implements Cloneable{
 	String profileimage;
 	@Column
 	String userlink;
-	@ElementCollection(fetch = FetchType.EAGER)
-	List<Integer> seen;
+//	@ElementCollection(fetch = FetchType.EAGER)
+	@OneToMany(fetch = FetchType.EAGER,cascade = CascadeType.ALL)
+	@JoinColumn(name = "id",referencedColumnName = "id")
+	List<UserD_seen> seen;
 
 
 	public String getId() {
@@ -114,14 +116,6 @@ public class UserD implements Cloneable{
 
 	public void setTag5(String tag5) {
 		this.tag5 = tag5;
-	}
-
-	public List<Integer> getSeen() {
-		return seen;
-	}
-
-	public void setSeen(List<Integer> seen) {
-		this.seen = seen;
 	}
 
 	public String getDisplayname() {
