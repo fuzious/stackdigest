@@ -32,7 +32,10 @@ public class ViewController {
 //            Query<Integer> test=session.createQuery("select :seen from ItemsD");
 //            System.out.println("test "+test.list());
 
-            Query<ItemsD> itemsDQuery = session.createQuery("from ItemsD as items where items.id not in (select seen from UserD_seen where id='"+currentUser.getId()+"')").setMaxResults(10);
+            Query<ItemsD> itemsDQuery = session.createQuery("from ItemsD as items where" +
+                    " ('"+currentUser.getTag1()+"' in (elements(items.tags) ) or '"+currentUser.getTag2()+"' in (elements(items.tags) ) or '"+currentUser.getTag3()+"' in elements(items.tags) or '"+currentUser.getTag4()+"' in elements(items.tags) or '"+currentUser.getTag5()+"' in elements(items.tags) ) " +
+                    "and items.id not in (select seen from UserD_seen where id='"+currentUser.getId()+"') ")
+                    .setMaxResults(10);
             itemsDList = itemsDQuery.list();
             transaction.commit();
 
