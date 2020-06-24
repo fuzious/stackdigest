@@ -14,6 +14,8 @@ public class ItemsD extends OwnerD {
 	private String body;
 	@Column
 	private String title;
+
+	//optimising search via BTree indexed tags
 	@ElementCollection(fetch = FetchType.EAGER)
 	@Column(length = 30)
 	@CollectionTable(indexes = @Index(name = "index_tags", columnList = "tags"))

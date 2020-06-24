@@ -3,6 +3,10 @@ package com.stackDigest.stackDigest.beans.database;
 import javax.persistence.*;
 
 @Entity
+@Table(indexes =
+        {
+                @Index(columnList = "id,seen",name = "user_id")
+        })
 public class UserD_seen {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
