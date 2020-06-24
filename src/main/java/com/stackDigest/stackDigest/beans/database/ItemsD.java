@@ -15,6 +15,8 @@ public class ItemsD extends OwnerD {
 	@Column
 	private String title;
 	@ElementCollection(fetch = FetchType.EAGER)
+	@Column(length = 30)
+	@CollectionTable(indexes = @Index(name = "index_tags", columnList = "tags"))
 	private Set<String> tags;
 	@OneToOne(fetch = FetchType.EAGER,cascade = CascadeType.ALL)
 	AnswersD answersD;

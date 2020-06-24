@@ -3,7 +3,7 @@ $(document).ready(function(){
 
 	var arr = null;
 	$.ajax({
-		url: "/feedData",
+		url: "/feedData/java",
 		type: "GET",
 		success: function (data) {
 			arr=data;

@@ -53,7 +53,7 @@ public class StackDigestApplication {
 		Transaction tx=session.beginTransaction();
 
 		try {
-			String uri = "https://api.stackexchange.com/2.2/search/advanced?page="+i+"&order=desc&sort=votes&accepted=True&site=stackoverflow&filter=!)EhxQMOPc)dH94o7-NBjAb4AcHxu2_8*7Nua1q2CUHEgIfc*9";
+			String uri = "https://api.stackexchange.com/2.2/search/advanced?page="+i+"&access_token=lcuewul2VbbADWgKoQAO2w))&key=65fR1xeD5oDJ8rNnDW7YtA((&order=desc&sort=votes&accepted=True&site=stackoverflow&filter=!)EhxQMOPc)dH94o7-NBjAb4AcHxu2_8*7Nua1q2CUHEgIfc*9";
 			i++;
 			RestTemplate restTemplate = new RestTemplate();
 			restTemplate.setRequestFactory(new HttpComponentsClientHttpRequestFactory());
