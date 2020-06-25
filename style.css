@@ -8,9 +8,11 @@ background-color: rgb(248, 239, 239);
     font-size: 20px;
     display: inline-block;
     /* border: 2px solid black;  */
-    position: sticky;
     background-color: white;
     width: 100%;
+    top: 0;
+    position: sticky;
+    border-bottom: 2px solid gray;
 }
 ul{
     display: flex;
@@ -20,7 +22,7 @@ ul>li{
     color: black; 
     font-weight: bold;
 }
-a{
+li>a{
     text-decoration: none;
     padding: 20px;
     color: red;
@@ -29,10 +31,10 @@ a{
     margin-left: 50px;
 }
 #third{
-    margin-right: 200px;
+    margin-right: 50px;
 }
 #add-button{
-    margin-left: 50px;
+    margin-left: 10px;
     padding: 10px;
 
     background-color: red;
@@ -89,12 +91,17 @@ a{
     display: block;
     margin: auto;
     /* border: 2px solid black; */
-    width: 40%;
+    width: 70%;
     min-height: 400px;
     background-color: white;
     margin-bottom: 30px;
     margin-top: 20px;
     padding-bottom: 20px;
+    box-shadow: 8px 8px 5px gray;
+}
+.feed:hover{
+    cursor: pointer;
+    box-shadow: 8px 8px 8px gray;
 }
 .profile{
     height: 50px;
@@ -126,7 +133,13 @@ a{
     padding-right: 20px;
     /* border: 2px solid black; */
     font-weight: bold;
+    font-size: 50px;
 
+}
+.qbody{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
 }
 .ans{
     padding-left: 20px;
@@ -172,5 +185,79 @@ a{
 .number{
     margin-left: 30px;
 }
+/* account-photo */
+#account-photo{
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+    border-radius: 50%;
+    padding: 0px;
+    margin-left: 10px;
+    border: 2px solid blue;
+}
+
+/* logo image */
+#logo-img{
+    height: 50px;
+    width: 50px;
+    vertical-align: middle;
+    border-radius: 50%;
+    padding: 0px;
+    margin-right: 15px;
+
+}
+
+code{
+    color: gray;
+    cursor: text;
+}
+
+.answer-date{
+    color: red;
+}
 
 
+/* Profile name css */
+#login-name{
+    color: black !important;
+    margin: 0px;
+    padding: 0px;
+}
+#login-li{
+    margin-left: 10px;
+    padding: 0px;
+}
+#profile-link{
+    padding: 0px;
+    margin: 0px;
+    margin-left: 100px;
+}
+#profile-link-2{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Logout button */
+#logout-li{
+    margin-left: 90px;
+    padding: 0px;
+}
+#logout-link{
+    padding: 0px;
+    margin: 0px;
+}
+#logout-btn{
+    cursor: pointer;
+
+}
+
+/* Answer date */
+.answer-date{
+    margin-top: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 70%;
+    font-size: larger;
+    font-weight: bold;
+    color: green; 
+}
