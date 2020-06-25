@@ -48,7 +48,9 @@ public class ViewController {
                         "and items.id not in (select seen from UserD_seen where id='"+currentUser.getId()+"')").setMaxResults(10);
                 itemsDQuery.setParameter(1,space);   //prevent SQL INJECTION
             }
-
+            else {
+                return new ResponseEntity<>(null,HttpStatus.OK);
+            }
 
 
             itemsDList = itemsDQuery.list();

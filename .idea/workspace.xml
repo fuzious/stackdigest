@@ -20,12 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="225feb5a-ab03-4566-985d-7629214ff556" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/MVC/ScheduledDatabase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/MVC/ScheduledItemsD.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/beans/database/ItemsD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/beans/database/ItemsD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/MVC/ViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/MVC/ViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/StackDigestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/StackDigestApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/beans/database/UserD_seen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/beans/database/UserD_seen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/stackDigest.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/MVC/ViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/MVC/ViewController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/StackDigestApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/StackDigestApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/beans/database/ItemsD.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/beans/database/ItemsD.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +86,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+    <property name="settings.editor.selected.configurable" value="spring.boot" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -283,7 +287,8 @@
       <workItem from="1592645493639" duration="1585000" />
       <workItem from="1592811002780" duration="1417000" />
       <workItem from="1592924541781" duration="34000" />
-      <workItem from="1592997638186" duration="27028000" />
+      <workItem from="1592997638186" duration="27737000" />
+      <workItem from="1593067698903" duration="9032000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1586176804219</created>
@@ -439,7 +444,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593035968197</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="multicolumn indexing for faster seen fetch">
+      <created>1593037588310</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1593037588310</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -480,7 +492,8 @@
     <MESSAGE value="interest component to feed added" />
     <MESSAGE value="personalised feed query" />
     <MESSAGE value="added searching feat. and indexing for fast search" />
-    <option name="LAST_COMMIT_MESSAGE" value="added searching feat. and indexing for fast search" />
+    <MESSAGE value="multicolumn indexing for faster seen fetch" />
+    <option name="LAST_COMMIT_MESSAGE" value="multicolumn indexing for faster seen fetch" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -552,10 +565,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="430" y="107" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.768@0.0.1366.768" timestamp="1587414494256" />
-    <state x="79" y="0" key="CommitChangelistDialog2" timestamp="1593035961369">
+    <state x="79" y="0" key="CommitChangelistDialog2" timestamp="1593037584933">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="79" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1593035961369" />
+    <state x="79" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1593037584933" />
     <state x="463" y="103" width="440" height="633" key="FileChooserDialogImpl" timestamp="1591348133561">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -564,38 +577,38 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="505" y="283" key="Github.CreateGistDialog/0.0.1366.768@0.0.1366.768" timestamp="1592646493974" />
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1593037517177">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1593082893434">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1593037517177" />
-    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1593037517177">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1593082893434" />
+    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1593082893434">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1593037517177" />
-    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1593037517177">
+    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1593082893434" />
+    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1593082893434">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1593037517177" />
-    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1593037517177">
+    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1593082893434" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1593082893434">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1593037517177" />
-    <state width="1323" height="192" key="GridCell.Tab.1.bottom" timestamp="1593037517177">
+    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1593082893434" />
+    <state width="1323" height="192" key="GridCell.Tab.1.bottom" timestamp="1593082893434">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1593037517177" />
-    <state width="1323" height="192" key="GridCell.Tab.1.center" timestamp="1593037517177">
+    <state width="1323" height="192" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1593082893434" />
+    <state width="1323" height="192" key="GridCell.Tab.1.center" timestamp="1593082893434">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1593037517177" />
-    <state width="1323" height="192" key="GridCell.Tab.1.left" timestamp="1593037517177">
+    <state width="1323" height="192" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1593082893434" />
+    <state width="1323" height="192" key="GridCell.Tab.1.left" timestamp="1593082893434">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1593037517177" />
-    <state width="1323" height="192" key="GridCell.Tab.1.right" timestamp="1593037517177">
+    <state width="1323" height="192" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1593082893434" />
+    <state width="1323" height="192" key="GridCell.Tab.1.right" timestamp="1593082893434">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1593037517177" />
+    <state width="1323" height="192" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1593082893434" />
     <state width="1323" height="238" key="GridCell.Tab.2.bottom" timestamp="1591128758634">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -612,14 +625,14 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1323" height="238" key="GridCell.Tab.2.right/0.0.1366.768@0.0.1366.768" timestamp="1591128758634" />
-    <state x="0" y="5" width="1366" height="710" key="SettingsEditor" timestamp="1591124551635">
+    <state x="0" y="5" width="1366" height="710" key="SettingsEditor" timestamp="1593081893359">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="0" y="5" width="1366" height="710" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1591124551635" />
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1593035972913">
+    <state x="0" y="5" width="1366" height="710" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1593081893359" />
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1593037598288">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1593035972913" />
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1593037598288" />
     <state x="499" y="162" key="chooseDestDirectoryDialog" timestamp="1587414751935">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

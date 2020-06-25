@@ -5,7 +5,7 @@ import javax.persistence.*;
 @Entity
 @Table(indexes =
         {
-                @Index(columnList = "id,seen",name = "user_id")
+                @Index(columnList = "id,seen",name = "user_id_seen")
         })
 public class UserD_seen {
     @Id
