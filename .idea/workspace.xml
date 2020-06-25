@@ -20,16 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="225feb5a-ab03-4566-985d-7629214ff556" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/MVC/ScheduledDatabase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/MVC/ScheduledItemsD.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/MVC/ViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/MVC/ViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/MVC/ScheduledDatabase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/MVC/ScheduledItemsD.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/StackDigestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/StackDigestApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/beans/database/UserD_seen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/beans/database/UserD_seen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/MVC/ViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/MVC/ViewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/avatar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/feed.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/feed.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/StackDigestApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/StackDigestApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/security/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/security/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/feed.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/feed.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -289,6 +292,8 @@
       <workItem from="1592924541781" duration="34000" />
       <workItem from="1592997638186" duration="27737000" />
       <workItem from="1593067698903" duration="9032000" />
+      <workItem from="1593082932576" duration="159000" />
+      <workItem from="1593089898886" duration="13450000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1586176804219</created>
@@ -451,7 +456,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593037588310</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="fixing scheduling">
+      <created>1593083010722</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1593083010722</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -493,7 +505,8 @@
     <MESSAGE value="personalised feed query" />
     <MESSAGE value="added searching feat. and indexing for fast search" />
     <MESSAGE value="multicolumn indexing for faster seen fetch" />
-    <option name="LAST_COMMIT_MESSAGE" value="multicolumn indexing for faster seen fetch" />
+    <MESSAGE value="fixing scheduling" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing scheduling" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -529,10 +542,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="497" y="260" width="387" height="248" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog/0.0.1366.768@0.0.1366.768" timestamp="1587762664722" />
-    <state x="453" y="85" key="#com.intellij.ide.util.MemberChooser" timestamp="1591374879908">
+    <state x="453" y="85" key="#com.intellij.ide.util.MemberChooser" timestamp="1593098018239">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="453" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1591374879908" />
+    <state x="453" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1593098018239" />
     <state x="412" y="160" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1587414744908">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -565,10 +578,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="430" y="107" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.768@0.0.1366.768" timestamp="1587414494256" />
-    <state x="79" y="0" key="CommitChangelistDialog2" timestamp="1593037584933">
+    <state x="79" y="0" key="CommitChangelistDialog2" timestamp="1593083007130">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="79" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1593037584933" />
+    <state x="79" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1593083007130" />
     <state x="463" y="103" width="440" height="633" key="FileChooserDialogImpl" timestamp="1591348133561">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -577,38 +590,38 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="505" y="283" key="Github.CreateGistDialog/0.0.1366.768@0.0.1366.768" timestamp="1592646493974" />
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1593082893434">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1593115864991">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1593082893434" />
-    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1593082893434">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1593115864991" />
+    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1593115864991">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1593082893434" />
-    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1593082893434">
+    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1593115864991" />
+    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1593115864991">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1593082893434" />
-    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1593082893434">
+    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1593115864991" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1593115864991">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1593082893434" />
-    <state width="1323" height="192" key="GridCell.Tab.1.bottom" timestamp="1593082893434">
+    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1593115864991" />
+    <state width="1323" height="192" key="GridCell.Tab.1.bottom" timestamp="1593115864991">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1593082893434" />
-    <state width="1323" height="192" key="GridCell.Tab.1.center" timestamp="1593082893434">
+    <state width="1323" height="192" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1593115864991" />
+    <state width="1323" height="192" key="GridCell.Tab.1.center" timestamp="1593115864991">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1593082893434" />
-    <state width="1323" height="192" key="GridCell.Tab.1.left" timestamp="1593082893434">
+    <state width="1323" height="192" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1593115864991" />
+    <state width="1323" height="192" key="GridCell.Tab.1.left" timestamp="1593115864991">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1593082893434" />
-    <state width="1323" height="192" key="GridCell.Tab.1.right" timestamp="1593082893434">
+    <state width="1323" height="192" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1593115864991" />
+    <state width="1323" height="192" key="GridCell.Tab.1.right" timestamp="1593115864991">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1593082893434" />
+    <state width="1323" height="192" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1593115864991" />
     <state width="1323" height="238" key="GridCell.Tab.2.bottom" timestamp="1591128758634">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -629,10 +642,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="0" y="5" width="1366" height="710" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1593081893359" />
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1593037598288">
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1593083025809">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1593037598288" />
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1593083025809" />
     <state x="499" y="162" key="chooseDestDirectoryDialog" timestamp="1587414751935">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
