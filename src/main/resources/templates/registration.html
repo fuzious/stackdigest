@@ -2,19 +2,32 @@
 <html xmlns:th="http://www.thymeleaf.org" lang="java">
 
     <head>
-        <meta charset="ISO-8859-1">
+        <meta charset="UTF-8">
         <title>StackDigest register</title>
+        <link rel="stylesheet" href="/css/master.css">
     </head>
 
     <body>
-        <h1>Registration Form</h1>
+
+    <div class="login-box">
+        <img src="/images/stomach.png" class="avatar" alt="Avatar Image">
+        <!--    <div>Icons made by <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons">Flat Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
+        <h1>Sign UP</h1>
         <form action="#" th:action="@{/registerUser}" method="post" th:object="${newUser}">
-            <input type="text" th:field="*{id}" />
-            <input type="password" th:field="*{password}" />
-            <button type="submit">Register</button>
-<!--            <input type="text" th:field="*{accesstoken}" th:value="${newUser.accesstoken} />-->
-            <input type="text" th:field="*{accesstoken}" th:value="${newUser.accesstoken}" th:readonly="readonly">
+            <!-- USERNAME INPUT -->
+            <label >Username</label>
+            <input type="text" th:name="username" th:field="*{id}" placeholder="Enter Username" required>
+            <!-- PASSWORD INPUT -->
+            <label >Password</label>
+            <input type="password" th:name="password" th:field="*{password}" placeholder="Enter Password" required>
+            <input type="text" th:field="*{accesstoken}" th:value="${newUser.accesstoken}" th:readonly="readonly" hidden="hidden">
+            <input type="submit" value="Sign UP">
+            <!--        <a href="#">Lost your Password?</a><br>-->
+            <a href="/">Back To LogIn</a>
         </form>
+    </div>
+
+
     </body>
 
 </html>

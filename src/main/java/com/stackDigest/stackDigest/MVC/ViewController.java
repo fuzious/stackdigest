@@ -73,7 +73,7 @@ public class ViewController {
                 transaction1.rollback();
                 e.printStackTrace();
             }
-            System.out.println("query "+itemsDList);
+//            System.out.println("query "+itemsDList);
             return new ResponseEntity<>(itemsDList, HttpStatus.OK);
         }
         catch (Exception e) {
