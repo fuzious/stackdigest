@@ -40,18 +40,16 @@ public class ViewController {
                         .setMaxResults(10);
             }
             else if (space.equals("all")) {
+                System.out.println("all result");
                 itemsDQuery=session.createQuery("from ItemsD as items where items.id not in" +
                         "(select seen from UserD_seen where id='"+currentUser.getId()+"')").setMaxResults(10);
             }
-            else if (space.equals(space)) {
+            else {
+                System.out.println("space= "+space);
                 itemsDQuery=session.createQuery("from ItemsD as items where ?1 in elements(items.tags)" +
                         "and items.id not in (select seen from UserD_seen where id='"+currentUser.getId()+"')").setMaxResults(10);
                 itemsDQuery.setParameter(1,space);   //prevent SQL INJECTION
             }
-            else {
-                return new ResponseEntity<>(null,HttpStatus.OK);
-            }
-
 
             itemsDList = itemsDQuery.list();
             transaction.commit();
@@ -73,7 +71,11 @@ public class ViewController {
                 transaction1.rollback();
                 e.printStackTrace();
             }
-//            System.out.println("query "+itemsDList);
+            System.out.println("query "+itemsDList);
+            if (itemsDList.size()<10) {
+                System.out.println("Not enough results");
+                return new ResponseEntity<>(null,HttpStatus.OK);
+            }
             return new ResponseEntity<>(itemsDList, HttpStatus.OK);
         }
         catch (Exception e) {

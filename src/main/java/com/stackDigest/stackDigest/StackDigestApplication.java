@@ -87,7 +87,7 @@ public class StackDigestApplication implements ApplicationContextAware, BeanName
 			tx.commit();
 
 			System.out.println(Calendar.getInstance().getTime()+" done");
-			if(i==20) {
+			if(i==10) {
 				//stop scheduling after certain iterations
 				System.out.println("STOPPED SCHEDULING");
 				stopSchedulerTask();

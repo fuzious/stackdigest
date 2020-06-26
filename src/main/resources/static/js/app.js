@@ -57,19 +57,21 @@ function construct() {
 
 	ans_date.forEach(function(element,index){
 		var unixtime = arr[index].answersD.creationDate;
-		function unixTime(unixtime) {
+		// function unixTime(unixtime) {
 
-			var u = new Date(unixtime*1000);
-
-			return u.getUTCFullYear() +
-				'-' + ('0' + u.getUTCMonth()).slice(-2) +
-				'-' + ('0' + u.getUTCDate()).slice(-2) +
-				' ' + ('0' + u.getUTCHours()).slice(-2) +
-				':' + ('0' + u.getUTCMinutes()).slice(-2) +
-				':' + ('0' + u.getUTCSeconds()).slice(-2) +
-				'.' + (u.getUTCMilliseconds() / 1000).toFixed(3).slice(2, 5)
-		};
-		element.innerHTML = "Answered on " + unixTime(unixtime);
+		function timeConverter(unixtime){
+			var a = new Date(unixtime * 1000);
+			var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+			var year = a.getFullYear();
+			var month = months[a.getMonth()];
+			var date = a.getDate();
+			var hour = a.getHours();
+			var min = a.getMinutes();
+			var sec = a.getSeconds();
+			var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
+			return time;
+		}
+		element.innerHTML = "Created on " + timeConverter(unixtime);
 	});
 
 
@@ -101,7 +103,9 @@ $(document).ready(function(){
 		type: "GET",
 		success: function (data) {
 			arr = data;
-			console.log(JSON.stringify(arr));
+			if (arr.length<10) {
+				alert("Not enough results");
+			}
 		}, error: function (jqXHR, textStatus, errorThrown) {
 			alert(jqXHR + " " + textStatus + " " + errorThrown+" outer AJAX")
 		},
@@ -121,24 +125,99 @@ $(document).ready(function(){
 	})
 });
 
+
+function allresult() {
+	console.log("all")
+	$.ajax({
+		url: "/feedData/all",
+		type: "GET",
+		success: function (data) {
+			arr = data;
+			if (arr.length<10) {
+				alert("Not enough results");
+			}
+			// console.log(JSON.stringify(arr));
+		}, error: function (jqXHR, textStatus, errorThrown) {
+			alert(jqXHR + " " + textStatus + " " + errorThrown+" outer AJAX")
+		},
+		complete: function () {
+			$.ajax({
+				url: "/user",
+				type: "GET",
+				success: function (data) {
+					loginObject=data;
+				},
+				error: function (jqXHR,textStatus,errorThrown) {
+					alert(jqXHR+" "+textStatus+" "+errorThrown+" innet AJAX")
+				},
+				complete: construct
+			})
+		}
+	})
+}
+
+
 function search() {
 	console.log(document.getElementById("datas").value);
 	requestUrl=document.getElementById("datas").value;
 	$.ajax({
-		type:"GET",
-		url:"/feedData/"+requestUrl,
-		success:function (data) {
-			arr=data;
+		url: "/feedData/"+requestUrl,
+		type: "GET",
+		success: function (data) {
+			arr = data;
+			if (arr.length<10) {
+				alert("Not enough results");
+			}
+			// console.log(JSON.stringify(arr));
+		}, error: function (jqXHR, textStatus, errorThrown) {
+			alert(jqXHR + " " + textStatus + " " + errorThrown+" outer AJAX")
 		},
-		error: function (jqXHR,textStatus,errorThrown) {
-			alert(jqXHR+" "+textStatus+" "+errorThrown+" inner AJAX")
-		},
-		complete: construct
-
+		complete: function () {
+			$.ajax({
+				url: "/user",
+				type: "GET",
+				success: function (data) {
+					loginObject=data;
+				},
+				error: function (jqXHR,textStatus,errorThrown) {
+					alert(jqXHR+" "+textStatus+" "+errorThrown+" innet AJAX")
+				},
+				complete: construct
+			})
+		}
 	})
 
 }
 
+function myspace() {
+	console.log("myspace");
+	$.ajax({
+		url: "/feedData/myspace",
+		type: "GET",
+		success: function (data) {
+			arr = data;
+			if (arr.length<10) {
+				alert("Not enough results");
+			}
+			// console.log(JSON.stringify(arr));
+		}, error: function (jqXHR, textStatus, errorThrown) {
+			alert(jqXHR + " " + textStatus + " " + errorThrown+" outer AJAX")
+		},
+		complete: function () {
+			$.ajax({
+				url: "/user",
+				type: "GET",
+				success: function (data) {
+					loginObject=data;
+				},
+				error: function (jqXHR,textStatus,errorThrown) {
+					alert(jqXHR+" "+textStatus+" "+errorThrown+" innet AJAX")
+				},
+				complete: construct
+			})
+		}
+	})
 
+}
 
 

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" lang="java">
 <head>
-    <meta charset="UTF-8">
-    <title>Stack Digest</title>
+    <meta charset="utf-8">
+    <title>Login Form Design One | Fazt</title>
     <link rel="stylesheet" href="css/master.css">
 </head>
 <body>
@@ -13,7 +13,6 @@
     <h1>Stack Digest</h1>
     <form action="#" th:action="@{/login}" method="post">
         <!-- USERNAME INPUT -->
-<!--        <p th:if="${loginError}" class="error">Wrong user or password</p>-->
         <label >Username</label>
         <input type="text" th:name="username" placeholder="Enter Username" required>
         <!-- PASSWORD INPUT -->
