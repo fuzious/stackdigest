@@ -1,9 +1,13 @@
 package com.stackDigest.stackDigest.beans.database;
 
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+
 import javax.persistence.*;
 
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
+@javax.persistence.Cacheable
+@org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
 //@MappedSuperclass
 public class OwnerD {
 

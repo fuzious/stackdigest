@@ -1,10 +1,14 @@
 package com.stackDigest.stackDigest.beans.database;
 
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+
 import javax.persistence.*;
 import java.util.Set;
 
 @Entity
 @PrimaryKeyJoinColumn(name = "qId")
+@javax.persistence.Cacheable
+@org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
 public class ItemsD extends OwnerD {
 	@Column
 	private int score;
@@ -20,6 +24,7 @@ public class ItemsD extends OwnerD {
 	@Column(length = 30)
 	@CollectionTable(indexes = @Index(name = "index_tags", columnList = "tags"))
 	private Set<String> tags;
+
 	@OneToOne(fetch = FetchType.EAGER,cascade = CascadeType.ALL)
 	AnswersD answersD;
 

@@ -71,7 +71,7 @@ public class ViewController {
                 transaction1.rollback();
                 e.printStackTrace();
             }
-            System.out.println("query "+itemsDList);
+//            System.out.println("query "+itemsDList);
             if (itemsDList.size()<10) {
                 System.out.println("Not enough results");
                 return new ResponseEntity<>(null,HttpStatus.OK);

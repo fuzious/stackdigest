@@ -1,9 +1,9 @@
-#HELP.md
-#target/
-#!.mvn/wrapper/maven-wrapper.jar
-#!**/src/main/**
-#!**/src/test/**
-#
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+
 #### STS ###
 #.apt_generated
 #.classpath
@@ -14,11 +14,12 @@
 #.sts4-cache
 #
 #### IntelliJ IDEA ###
-#.idea
-#*.iws
-#*.iml
-#*.ipr
-#
+.idea
+*.iws
+*.iml
+*.ipr
+
+application.properties
 #### NetBeans ###
 #/nbproject/private/
 #/nbbuild/
