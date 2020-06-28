@@ -19,58 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="225feb5a-ab03-4566-985d-7629214ff556" name="Default Changelist" comment="minor fix">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/ajax-loader.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/MVC/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/MVC/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/MVC/ViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/MVC/ViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/StackDigestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/StackDigestApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/beans/database/AnswersD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/beans/database/AnswersD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/beans/database/ItemsD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/beans/database/ItemsD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/beans/database/OwnerD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/beans/database/OwnerD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/beans/database/UserD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/beans/database/UserD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/beans/database/UserD_seen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/beans/database/UserD_seen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/feed.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/feed.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/MVC/HomeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/MVC/OauthController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/MVC/ViewController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/StackDigestApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/beans/database/AnswersD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/beans/database/ItemsD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/beans/database/OwnerD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/beans/database/UserD.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/beans/restfetch/JsonRootBeanAccessToken.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/beans/restfetch/QuestionsAll/Answers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/beans/restfetch/QuestionsAll/Items.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/beans/restfetch/QuestionsAll/JsonRootBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/beans/restfetch/QuestionsAll/Owner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/beans/restfetch/tagfetch/Items.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/beans/restfetch/tagfetch/JsonRootBeanTag.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/beans/restfetch/userFetch/Items.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/beans/restfetch/userFetch/JsonRootBeanUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/security/MyUserDetailService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/security/MyUserDetails.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/security/SecurityConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/security/UserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/webservice/QuestionAll.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/stackDigest/stackDigest/webservice/TestJDBC.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/css/master.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/abc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/bg.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/images/stomach.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/feed.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/post.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/registration.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/stackDigest/stackDigest/StackDigestApplicationTests.class" beforeDir="false" />
-    </list>
+    <list default="true" id="225feb5a-ab03-4566-985d-7629214ff556" name="Default Changelist" comment="minor fix" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -335,7 +284,7 @@
       <workItem from="1593253580442" duration="9285000" />
       <workItem from="1593286090450" duration="4522000" />
       <workItem from="1593291034901" duration="11368000" />
-      <workItem from="1593346785132" duration="7843000" />
+      <workItem from="1593346785132" duration="8474000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1586176804219</created>
@@ -533,7 +482,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593356213630</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="minor fix">
+      <created>1593357541762</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1593357541762</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -650,10 +606,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="430" y="107" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.768@0.0.1366.768" timestamp="1587414494256" />
-    <state x="79" y="0" key="CommitChangelistDialog2" timestamp="1593357445859">
+    <state x="79" y="0" key="CommitChangelistDialog2" timestamp="1593357640393">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="79" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1593357445859" />
+    <state x="79" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1593357640393" />
     <state x="463" y="103" width="440" height="633" key="FileChooserDialogImpl" timestamp="1591348133561">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -710,6 +666,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1323" height="238" key="GridCell.Tab.2.right/0.0.1366.768@0.0.1366.768" timestamp="1591128758634" />
+    <state x="321" y="145" key="MultipleFileMergeDialog" timestamp="1593357602994">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="321" y="145" key="MultipleFileMergeDialog/0.0.1366.768@0.0.1366.768" timestamp="1593357602994" />
     <state x="0" y="5" width="1366" height="710" key="SettingsEditor" timestamp="1593081893359">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -718,10 +678,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="92" y="92" width="1182" height="584" key="ShowDiffWithBranchDialog/0.0.1366.768@0.0.1366.768" timestamp="1593182304186" />
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1593356225608">
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1593357545020">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1593356225608" />
+    <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1593357545020" />
     <state x="499" y="162" key="chooseDestDirectoryDialog" timestamp="1587414751935">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
