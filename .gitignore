@@ -19,6 +19,7 @@ target/
 *.iml
 *.ipr
 
+hibernate.cfg.xml
 application.properties
 #### NetBeans ###
 #/nbproject/private/

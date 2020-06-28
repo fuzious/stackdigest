@@ -7,7 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.Lob;
 import javax.persistence.PrimaryKeyJoinColumn;
 
-@Entity
+@Entity(name = "answersd")
 @PrimaryKeyJoinColumn(name = "aId")
 @javax.persistence.Cacheable
 @org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.READ_WRITE)

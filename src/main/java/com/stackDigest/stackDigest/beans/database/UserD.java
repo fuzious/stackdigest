@@ -3,7 +3,7 @@ package com.stackDigest.stackDigest.beans.database;
 import javax.persistence.*;
 import java.util.List;
 
-@Entity
+@Entity(name = "userd")
 public class UserD implements Cloneable{
 	@Id
 	@Column(nullable = false, columnDefinition="VARCHAR(64)")

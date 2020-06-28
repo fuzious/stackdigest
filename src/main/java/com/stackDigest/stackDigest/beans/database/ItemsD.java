@@ -5,7 +5,7 @@ import org.hibernate.annotations.CacheConcurrencyStrategy;
 import javax.persistence.*;
 import java.util.Set;
 
-@Entity
+@Entity(name = "itemsd")
 @PrimaryKeyJoinColumn(name = "qId")
 @javax.persistence.Cacheable
 @org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.READ_WRITE)

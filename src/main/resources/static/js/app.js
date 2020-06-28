@@ -3,7 +3,7 @@
 
 var arr = null;
 var loginObject=null;
-
+$body = $("body");
 function construct() {
 	var img_obj = document.querySelectorAll(".avatar");
 	var info_obj = document.querySelectorAll(".info");
@@ -105,6 +105,7 @@ $(document).ready(function(){
 			arr = data;
 			if (arr.length<10) {
 				alert("Not enough results");
+				$body.removeClass("loading");
 			}
 		}, error: function (jqXHR, textStatus, errorThrown) {
 			alert(jqXHR + " " + textStatus + " " + errorThrown+" outer AJAX")
@@ -119,7 +120,7 @@ $(document).ready(function(){
 				error: function (jqXHR,textStatus,errorThrown) {
 					alert(jqXHR+" "+textStatus+" "+errorThrown+" innet AJAX")
 				},
-				complete: construct
+				complete: function(){ if (arr.length<10) {alert("NOT ENOUGH RESULTS TO DISPLAY")} else construct() }
 			})
 		}
 	})
@@ -150,7 +151,7 @@ function allresult() {
 				error: function (jqXHR,textStatus,errorThrown) {
 					alert(jqXHR+" "+textStatus+" "+errorThrown+" innet AJAX")
 				},
-				complete: construct
+				complete: function(){ if (arr.length<10) {alert("NOT ENOUGH RESULTS TO DISPLAY")} else construct() }
 			})
 		}
 	})
@@ -165,9 +166,6 @@ function search() {
 		type: "GET",
 		success: function (data) {
 			arr = data;
-			if (arr.length<10) {
-				alert("Not enough results");
-			}
 			// console.log(JSON.stringify(arr));
 		}, error: function (jqXHR, textStatus, errorThrown) {
 			alert(jqXHR + " " + textStatus + " " + errorThrown+" outer AJAX")
@@ -182,7 +180,7 @@ function search() {
 				error: function (jqXHR,textStatus,errorThrown) {
 					alert(jqXHR+" "+textStatus+" "+errorThrown+" innet AJAX")
 				},
-				complete: construct
+				complete: function(){ if (arr.length<10) {alert("NOT ENOUGH RESULTS TO DISPLAY")} else construct() }
 			})
 		}
 	})
@@ -196,9 +194,6 @@ function myspace() {
 		type: "GET",
 		success: function (data) {
 			arr = data;
-			if (arr.length<10) {
-				alert("Not enough results");
-			}
 			// console.log(JSON.stringify(arr));
 		}, error: function (jqXHR, textStatus, errorThrown) {
 			alert(jqXHR + " " + textStatus + " " + errorThrown+" outer AJAX")
@@ -213,11 +208,16 @@ function myspace() {
 				error: function (jqXHR,textStatus,errorThrown) {
 					alert(jqXHR+" "+textStatus+" "+errorThrown+" innet AJAX")
 				},
-				complete: construct
+				complete: function(){ if (arr.length<10) {alert("NOT ENOUGH RESULTS TO DISPLAY")} else construct() }
 			})
 		}
 	})
 
 }
 
+$body = $("body");
 
+$(document).on({
+	ajaxStart: function() { $body.addClass("loading");    },
+	ajaxStop: function() { $body.removeClass("loading"); }
+});

@@ -2,7 +2,7 @@ package com.stackDigest.stackDigest.beans.database;
 
 import javax.persistence.*;
 
-@Entity
+@Entity(name = "userd_seen")
 @Table(indexes =
         {
                 @Index(columnList = "id,seen",name = "user_id_seen")
