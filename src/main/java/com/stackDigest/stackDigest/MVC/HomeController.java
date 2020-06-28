@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.client.RestTemplate;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpSession;
 
@@ -57,6 +58,16 @@ public class HomeController {
 	@RequestMapping("/feed")
 	public String feed() {
 		return "feed";
+	}
+
+	@RequestMapping("/unregister")
+	public ModelAndView unregister(HttpSession httpSession) {
+		UserD currentUser= (UserD) httpSession.getAttribute("currentUser");
+		Session session=StackDigestApplication.getFactory().getCurrentSession();
+		Transaction transaction=session.beginTransaction();
+		session.delete(currentUser);
+		transaction.commit();
+		return new ModelAndView("redirect:logout");
 	}
 
 	@RequestMapping("/registerUser"	)

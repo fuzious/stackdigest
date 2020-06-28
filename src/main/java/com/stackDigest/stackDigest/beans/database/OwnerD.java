@@ -4,7 +4,7 @@ import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 import javax.persistence.*;
 
-@Entity
+@Entity(name = "ownerd")
 @Inheritance(strategy = InheritanceType.JOINED)
 @javax.persistence.Cacheable
 @org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.READ_WRITE)

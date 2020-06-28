@@ -34,20 +34,20 @@ public class ViewController {
 //            System.out.println("test "+test.list());
             Query<ItemsD> itemsDQuery=null;
             if (space.equals("myspace")) {
-                itemsDQuery = session.createQuery("from ItemsD as items where" +
+                itemsDQuery = session.createQuery("from itemsd as items where" +
                         " ('" + currentUser.getTag1() + "' in (elements(items.tags) ) or '" + currentUser.getTag2() + "' in (elements(items.tags) ) or '" + currentUser.getTag3() + "' in elements(items.tags) or '" + currentUser.getTag4() + "' in elements(items.tags) or '" + currentUser.getTag5() + "' in elements(items.tags) ) " +
-                        "and items.id not in (select seen from UserD_seen where id='" + currentUser.getId() + "') ")
+                        "and items.id not in (select seen from userd_seen where id='" + currentUser.getId() + "') ")
                         .setMaxResults(10);
             }
             else if (space.equals("all")) {
                 System.out.println("all result");
-                itemsDQuery=session.createQuery("from ItemsD as items where items.id not in" +
-                        "(select seen from UserD_seen where id='"+currentUser.getId()+"')").setMaxResults(10);
+                itemsDQuery=session.createQuery("from itemsd as items where items.id not in" +
+                        "(select seen from userd_seen where id='"+currentUser.getId()+"')").setMaxResults(10);
             }
             else {
                 System.out.println("space= "+space);
-                itemsDQuery=session.createQuery("from ItemsD as items where ?1 in elements(items.tags)" +
-                        "and items.id not in (select seen from UserD_seen where id='"+currentUser.getId()+"')").setMaxResults(10);
+                itemsDQuery=session.createQuery("from itemsd as items where ?1 in elements(items.tags)" +
+                        "and items.id not in (select seen from userd_seen where id='"+currentUser.getId()+"')").setMaxResults(10);
                 itemsDQuery.setParameter(1,space);   //prevent SQL INJECTION
             }
 

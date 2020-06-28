@@ -16,7 +16,6 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
 import org.springframework.scheduling.annotation.EnableScheduling;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor;
 import org.springframework.web.client.RestTemplate;
 
@@ -67,7 +66,7 @@ public class StackDigestApplication implements ApplicationContextAware, BeanName
 		bean.postProcessBeforeDestruction(this,beanName);
 	}
 
-	@Scheduled(fixedDelay = 5000)
+//	@Scheduled(fixedDelay = 100)
 	public void delay() {
 		System.out.println("hi");
 		Session session= StackDigestApplication.getFactory().getCurrentSession();
@@ -87,11 +86,13 @@ public class StackDigestApplication implements ApplicationContextAware, BeanName
 			tx.commit();
 
 			System.out.println(Calendar.getInstance().getTime()+" done");
-			if(i==20) {
+			if(i==65) {
 				//stop scheduling after certain iterations
 				System.out.println("STOPPED SCHEDULING");
 				stopSchedulerTask();
 			}
+
+			System.out.println("Database insertion "+(i-1)+" completed");
 		}
 		catch (Exception e) {
 			if (tx!=null)
