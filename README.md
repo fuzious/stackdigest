@@ -5,8 +5,8 @@
 <a href="https://stackdigest.herokuapp.com" ><img src="stomach.png" width="200px" ></a>
 </p>
 
-# Project Live <a href="stackdigest.herokuapp.com">here</a>
-# Read about project <a href="stackdigest.herokuapp.com/about">here</a>
+# Project Live <a href="https://stackdigest.herokuapp.com">here</a>
+# Read about project <a href="https://stackdigest.herokuapp.com/about">here</a>
 
 # <span style="font-size: xx-large;">What is stackdigest?</span> 
 
