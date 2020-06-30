@@ -2,7 +2,7 @@
 # Stack Digest
 
 # Project Live <a href="stackdigest.herokuapp.com">here</a>
-# Read about project here <a href="stackdigest.herokuapp.com/about">here</a>
+# Read about project <a href="stackdigest.herokuapp.com/about">here</a>
 
 # <span style="font-size: xx-large;">What is stackdigest?</span> 
 
