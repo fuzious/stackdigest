@@ -33,6 +33,11 @@ public class HomeController {
 		return "login";
 	}
 
+	@RequestMapping("/about")
+	public String about() {
+		return "about";
+	}
+
 	@RequestMapping("/currentUser")
 	@ResponseBody
 	public UserD currentLoggedIn() {
@@ -73,7 +78,7 @@ public class HomeController {
 	@RequestMapping("/registerUser"	)
 	public String registerUser(@ModelAttribute("newUser")UserD newUser,@ModelAttribute("access_token") String accesstoken) {
 
-		final String userUri="https://api.stackexchange.com/2.2/me?order=desc&sort=reputation&site=stackoverflow&filter=!)69Ph.xUM9L(Fi(0_(vez0TM-xZ1&key=65fR1xeD5oDJ8rNnDW7YtA((&access_token="+newUser.getAccesstoken();
+		final String userUri="https://api.stackexchange.com/2.2/me?order=desc&sort=reputation&site=stackoverflow&filter=!)69Ph.xUM9L(Fi(0_(vez0TM-xZ1&key="+OauthController.key+"&access_token="+newUser.getAccesstoken();
 		System.out.println(newUser+" "+accesstoken+" "+userUri);
 
 		RestTemplate restTemplate = new RestTemplate();
@@ -86,18 +91,27 @@ public class HomeController {
 		JsonRootBeanTag result = restTemplate.getForObject(uri,JsonRootBeanTag.class);
 		System.out.println(userResult);
 		assert result != null;
-		assert userResult!=null;
+		assert userResult != null;
+		try {
+			newUser.setTag1(result.getItems().get(0).getName());
+			newUser.setTag2(result.getItems().get(1).getName());
+			newUser.setTag3(result.getItems().get(2).getName());
+			newUser.setTag4(result.getItems().get(3).getName());
+			newUser.setTag5(result.getItems().get(4).getName());
+		}
+		catch (Exception e) {
+			newUser.setTag1("java");
+			newUser.setTag2("javascript");
+			newUser.setTag3("python");
+			newUser.setTag4("c#");
+			newUser.setTag5("php");
+		}
 
-		newUser.setTag1(result.getItems().get(0).getName());
-		newUser.setTag2(result.getItems().get(1).getName());
-		newUser.setTag3(result.getItems().get(2).getName());
-		newUser.setTag4(result.getItems().get(3).getName());
-		newUser.setTag5(result.getItems().get(4).getName());
-
-		newUser.setStackid(	userResult.getItems().get(0).getUserId());
+		newUser.setStackid(userResult.getItems().get(0).getUserId());
 		newUser.setDisplayname(userResult.getItems().get(0).getDisplayName());
 		newUser.setProfileimage(userResult.getItems().get(0).getProfileImage());
 		newUser.setUserlink(userResult.getItems().get(0).getLink());
+
 
 		System.out.println(newUser);
 

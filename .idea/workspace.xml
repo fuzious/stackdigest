@@ -21,6 +21,13 @@
   <component name="ChangeListManager">
     <list default="true" id="225feb5a-ab03-4566-985d-7629214ff556" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/MVC/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/MVC/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/MVC/OauthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/MVC/OauthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/MVC/ViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/MVC/ViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/StackDigestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/StackDigestApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/stackDigest/stackDigest/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/feed.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/feed.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,13 +73,14 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../stackdigest heroku/stackDigest" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -121,6 +129,8 @@
       <command value="open passdapp" />
       <command value="open D:\src\projects\learningMVC" />
       <command value="open C:\Users\fuzious\IdeaProjects\CP" />
+      <command value="open D:\src\stackdigest heroku\stackDigest" />
+      <command value="open D:\src\stackdigest heroku" />
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.StackDigestApplication">
@@ -287,7 +297,10 @@
       <workItem from="1593286090450" duration="4522000" />
       <workItem from="1593291034901" duration="11368000" />
       <workItem from="1593346785132" duration="9157000" />
-      <workItem from="1593432301645" duration="356000" />
+      <workItem from="1593432301645" duration="1375000" />
+      <workItem from="1593464605387" duration="1903000" />
+      <workItem from="1593492442545" duration="2254000" />
+      <workItem from="1593508873271" duration="3361000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1586176804219</created>
@@ -620,10 +633,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="79" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1593358121216" />
-    <state x="463" y="103" width="440" height="633" key="FileChooserDialogImpl" timestamp="1591348133561">
+    <state x="463" y="103" width="440" height="633" key="FileChooserDialogImpl" timestamp="1593433684150">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="463" y="103" width="440" height="633" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1591348133561" />
+    <state x="463" y="103" width="440" height="633" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1593433684150" />
     <state x="505" y="283" key="Github.CreateGistDialog" timestamp="1592646493974">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -680,6 +693,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="321" y="145" key="MultipleFileMergeDialog/0.0.1366.768@0.0.1366.768" timestamp="1593358165064" />
+    <state x="348" y="88" key="NewModule_or_Project.wizard" timestamp="1593433688464">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="348" y="88" key="NewModule_or_Project.wizard/0.0.1366.768@0.0.1366.768" timestamp="1593433688464" />
     <state x="0" y="5" width="1366" height="710" key="SettingsEditor" timestamp="1593081893359">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -708,10 +725,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="59" y="13" key="new project wizard/0.0.1366.768@0.0.1366.768" timestamp="1588683174645" />
-    <state x="339" y="172" width="672" height="677" key="run.anything.popup" timestamp="1592060481484">
+    <state x="339" y="172" width="672" height="677" key="run.anything.popup" timestamp="1593509056325">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="339" y="172" width="672" height="677" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1592060481484" />
+    <state x="339" y="172" width="672" height="677" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1593509056325" />
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1590129472075">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

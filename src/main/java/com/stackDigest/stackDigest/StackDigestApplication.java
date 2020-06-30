@@ -66,7 +66,7 @@ public class StackDigestApplication implements ApplicationContextAware, BeanName
 		bean.postProcessBeforeDestruction(this,beanName);
 	}
 
-//	@Scheduled(fixedDelay = 100)
+	//	@Scheduled(fixedDelay = 100)
 	public void delay() {
 		System.out.println("hi");
 		Session session= StackDigestApplication.getFactory().getCurrentSession();

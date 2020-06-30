@@ -17,10 +17,14 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class OauthController {
+    public static String client_id="XXX";
+    public static String client_secret="XXX";
+    public static String key="XXX";
+    public static String redirect_uri="https://stackdigest.herokuapp.com/oauth/final";
 
     @RequestMapping("/oauth/init")
     public ModelAndView initOauth() {
-        return new ModelAndView("redirect:"+"https://stackoverflow.com/oauth?client_id=17762&scope=no_expiry&redirect_uri=http%3A%2F%2Flocalhost%3A8080%2Foauth%2Ffinal");
+        return new ModelAndView("redirect:"+"https://stackoverflow.com/oauth?client_id="+client_id+"&scope=no_expiry&redirect_uri="+redirect_uri);
     }
 
     @RequestMapping("/oauth/final")
@@ -30,10 +34,10 @@ public class OauthController {
         HttpHeaders headers=new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
         MultiValueMap<String,String> multiValueMap=new LinkedMultiValueMap<>();
-        multiValueMap.add("client_id","17762");
-        multiValueMap.add("client_secret","8PyQzYp5Mz2HVdk5Oo0pHw((");
+        multiValueMap.add("client_id",client_id);
+        multiValueMap.add("client_secret",client_secret);
         multiValueMap.add("code",code);
-        multiValueMap.add("redirect_uri","http://localhost:8080/oauth/final");
+        multiValueMap.add("redirect_uri",redirect_uri);
 
         HttpEntity<MultiValueMap<String,String>> mapHttpEntity= new HttpEntity<>(multiValueMap,headers);
         ResponseEntity<JsonRootBeanAccessToken> response = restTemplate.postForEntity( url, mapHttpEntity , JsonRootBeanAccessToken.class );

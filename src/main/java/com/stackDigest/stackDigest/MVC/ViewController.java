@@ -22,7 +22,7 @@ public class ViewController {
     @RequestMapping("/feedData/{space}")
     @ResponseBody
     public ResponseEntity<List<ItemsD>> feed(HttpSession httpSession, @PathVariable String space) {
-        System.out.println("loggedIN check "+httpSession.getAttribute("currentUser"));
+//        System.out.println("loggedIN check "+httpSession.getAttribute("currentUser"));
         Transaction transaction=null;
         try {
             UserD currentUser=(UserD)httpSession.getAttribute("currentUser");
@@ -68,7 +68,7 @@ public class ViewController {
             }
             catch (Exception e) {
                 if (transaction1!=null)
-                transaction1.rollback();
+                    transaction1.rollback();
                 e.printStackTrace();
             }
 //            System.out.println("query "+itemsDList);
