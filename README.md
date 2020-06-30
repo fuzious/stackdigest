@@ -1,5 +1,9 @@
 
-# Stack Digest
+<h1 align="center"><a href="https://stackdigest.herokuapp.com" >Stack Digest</a></h1>
+
+<p align="center">
+<a href="https://stackdigest.herokuapp.com" ><img src="stomach.png" width="200px" ></a>
+</p>
 
 # Project Live <a href="stackdigest.herokuapp.com">here</a>
 # Read about project <a href="stackdigest.herokuapp.com/about">here</a>
@@ -32,11 +36,11 @@ https://dev.to/stackoverflow/select-post-from-stack-overflow-questions-where-top
 *   <span style="font-size: large; color: #ff0000;">Hibernate</span> Hibernate has been used as **ORM** for interactions with MySQL.
 *   <span style="font-size: large; color: #ff0000;">Thymeleaf</span> template engine has been used for serving HTML content.
 
-![Screenshot](ER Stackdigest.png)
+<img src="ER Stackdigest.png"></img>
 
-##Backend by: 
+## Backend by: 
 <a href="https://github.com/fuzious">Arpit Srivastava</a>
-##Frontend by:
+## Frontend by:
 <a href="https://github.com/">Sudhanshu Mishra</a>
 
 
