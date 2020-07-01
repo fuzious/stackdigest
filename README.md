@@ -1,8 +1,12 @@
 
-# Stack Digest
+<h1 align="center"><a href="https://stackdigest.herokuapp.com" >Stack Digest</a></h1>
 
-# Project Live <a href="stackdigest.herokuapp.com">here</a>
-# Read about project here <a href="stackdigest.herokuapp.com/about">here</a>
+<p align="center">
+<a href="https://stackdigest.herokuapp.com" ><img src="stomach.png" width="200px" ></a>
+</p>
+
+# Project Live <a href="https://stackdigest.herokuapp.com">here</a>
+# Read about project <a href="https://stackdigest.herokuapp.com/about">here</a>
 
 # <span style="font-size: xx-large;">What is stackdigest?</span> 
 
@@ -26,17 +30,17 @@ https://dev.to/stackoverflow/select-post-from-stack-overflow-questions-where-top
 # Tech Stack
 
 *   <span style="font-size: large; color: #ff0000;">MySQL</span> has been used as **database**. Search **indexing** as BTree has been done for optimisation and **BCNF** **normalisation** has been done.
-*   <span style="font-size: large; color: #ff0000;">EH-Cache</span> has been used for **in-memory database** optimisation to make user's interaction with the site faster.
+*   <span style="font-size: large; color: #ff0000;">EH-Cache</span> has been used for **in-memory database** optimisation to reduce load on MySQL and make common queries faster.
 *   <span style="font-size: large; color: #ff0000;">Spring-Boot</span> Used to fetch REST content from stackoverflow's API and build a webapp for stackdigest.
 *   <span style="font-size: large; color: #ff0000;">Spring Security with JPA</span> Used to handle security features and OAuth of Stackdigest.
 *   <span style="font-size: large; color: #ff0000;">Hibernate</span> Hibernate has been used as **ORM** for interactions with MySQL.
 *   <span style="font-size: large; color: #ff0000;">Thymeleaf</span> template engine has been used for serving HTML content.
 
-![Screenshot](ER Stackdigest.png)
+<img src="ER Stackdigest.png"></img>
 
-##Backend by: 
+## Backend by: 
 <a href="https://github.com/fuzious">Arpit Srivastava</a>
-##Frontend by:
+## Frontend by:
 <a href="https://github.com/">Sudhanshu Mishra</a>
 
 
