@@ -30,7 +30,7 @@ https://dev.to/stackoverflow/select-post-from-stack-overflow-questions-where-top
 # Tech Stack
 
 *   <span style="font-size: large; color: #ff0000;">MySQL</span> has been used as **database**. Search **indexing** as BTree has been done for optimisation and **BCNF** **normalisation** has been done.
-*   <span style="font-size: large; color: #ff0000;">EH-Cache</span> has been used for **in-memory database** optimisation to make user's interaction with the site faster.
+*   <span style="font-size: large; color: #ff0000;">EH-Cache</span> has been used for **in-memory database** optimisation to reduce load on MySQL and make common queries faster.
 *   <span style="font-size: large; color: #ff0000;">Spring-Boot</span> Used to fetch REST content from stackoverflow's API and build a webapp for stackdigest.
 *   <span style="font-size: large; color: #ff0000;">Spring Security with JPA</span> Used to handle security features and OAuth of Stackdigest.
 *   <span style="font-size: large; color: #ff0000;">Hibernate</span> Hibernate has been used as **ORM** for interactions with MySQL.
