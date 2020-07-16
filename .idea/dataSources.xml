@@ -23,5 +23,11 @@ D:/src/stackdigest/stackDigest/src/main/resources/hibernate.cfg.xml</remarks>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://sql12.freemysqlhosting.net/sql12345006</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="stackdigest@localhost [2]" uuid="5193cd9f-590b-433f-8fe8-ec4b289f4397">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/stackdigest</jdbc-url>
+    </data-source>
   </component>
 </project>

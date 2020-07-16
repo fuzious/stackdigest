@@ -16,6 +16,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
 import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor;
 import org.springframework.web.client.RestTemplate;
 
@@ -30,7 +31,7 @@ public class StackDigestApplication implements ApplicationContextAware, BeanName
 	private static SessionFactory factory;
 	private ApplicationContext applicationContext;
 	private String beanName;
-
+	private int max=60;
 
 
 	private int i=1;
@@ -42,6 +43,9 @@ public class StackDigestApplication implements ApplicationContextAware, BeanName
 	public void startUp() {
 
 		factory=new Configuration().configure("hibernate.cfg.xml")
+				.setProperty("hibernate.connection.url",System.getenv("JDBC_DATABASE_URL"))
+				.setProperty("hibernate.connection.username",System.getenv("JDBC_DATABASE_USERNAME"))
+				.setProperty("hibernate.connection.password",System.getenv("JDBC_DATABASE_PASSWORD"))
 				.addAnnotatedClass(ItemsD.class)
 				.addAnnotatedClass(OwnerD.class)
 				.addAnnotatedClass(AnswersD.class)
@@ -66,8 +70,9 @@ public class StackDigestApplication implements ApplicationContextAware, BeanName
 		bean.postProcessBeforeDestruction(this,beanName);
 	}
 
-	//	@Scheduled(fixedDelay = 100)
+	@Scheduled(fixedDelay = 1)
 	public void delay() {
+
 		System.out.println("hi");
 		Session session= StackDigestApplication.getFactory().getCurrentSession();
 		Transaction tx=session.beginTransaction();
@@ -86,7 +91,7 @@ public class StackDigestApplication implements ApplicationContextAware, BeanName
 			tx.commit();
 
 			System.out.println(Calendar.getInstance().getTime()+" done");
-			if(i==65) {
+			if(i==max) {
 				//stop scheduling after certain iterations
 				System.out.println("STOPPED SCHEDULING");
 				stopSchedulerTask();
@@ -95,6 +100,7 @@ public class StackDigestApplication implements ApplicationContextAware, BeanName
 			System.out.println("Database insertion "+(i-1)+" completed");
 		}
 		catch (Exception e) {
+			max++;
 			if (tx!=null)
 				tx.rollback();
 			e.printStackTrace();

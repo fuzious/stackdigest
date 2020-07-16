@@ -17,7 +17,7 @@ public class TestJDBC {
 //        String user="root";
 //        String pass="arpit";
 //        try {
-////            Class.forName("com.mysql.cj.jdbc.Driver");
+//            Class.forName("com.mysql.cj.jdbc.Driver");
 //            Connection myConn= DriverManager.getConnection(jdbcUrl,user,pass);
 //            System.out.println("SUCCESS");
 //        }
